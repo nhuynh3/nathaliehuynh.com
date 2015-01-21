@@ -2,8 +2,21 @@ doctype html
 html
   head
     link(href='http://fonts.googleapis.com/css?family=Poiret+One|Exo' rel='stylesheet' type='text/css')
-    title= title
+
+    link(rel='stylesheet', href='/stylesheets/semantic.min.css')
+
+
     link(rel='stylesheet', href='/stylesheets/style.css')
+
+    script(type='text/javascript', src='/javascripts/jquery-1.11.0.min.js')
+    script(type='text/javascript', src='/javascripts/semantic.min.js')
+    
+    link(rel="stylesheet", href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css")
+    script(src="//code.jquery.com/ui/1.11.2/jquery-ui.js")
+
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+
+    title= title
   body
     block content
     if true

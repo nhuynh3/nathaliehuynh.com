@@ -44,6 +44,10 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['public/stylesheets/*.css']
+      },
+      jade: {
+        files: ['views/index.jade'],
+        tasks: "jade" 
       }
     }
   });  

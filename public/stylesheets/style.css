@@ -1,4 +1,4 @@
-/* Reset Styles */
+/*Reset Styles */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -86,7 +86,7 @@ body, html {
   
   padding-bottom : 12px;
   text-align: center;
-  color: hsla(20,100%,25%,0.3);  
+  color: hsla(20,100%,25%,0.4);  
 }
 
 .education #school, #major{
@@ -112,22 +112,36 @@ body, html {
 a:link, a:visited{
   text-decoration:none;
   font:'Poiret One', Arial, cursive;
-  color: hsla(20,100%,10%,0.7)
+  color:hsla(20,100%,25%,0.4)
 }
 
 a:hover{
-  color:hsla(20,100%,25%,0.3);
+  color: hsla(20,100%,10%,0.7)
 }
 
 .links{
   width: 180px;
   left: 121px;
-  position: relative;
-  
-  top: 5px;
-  text-align: right;
-  font:'Poiret One', cursive;
-
-  font-size: 1.5em;
-  
+  position: initial;
+  top: 1rem;  
 }
+
+
+i.icon {
+  line-height: 2.5;
+}
+
+.ui.grid {
+  margin:0;
+  margin-left: 5.45rem;
+}
+.ui.grid>.column:not(.row), .ui.grid>.row>.column {
+  font-size: 1.8rem;
+}
+
+#file{
+  font-size: 1.5rem;
+  line-height: 3;
+  margin-left: .45rem;
+}
+
