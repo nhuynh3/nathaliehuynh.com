@@ -56,92 +56,112 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body, html {
   height: 100%;
-  font: 14px 'Exo', Arial, sans-serif;
+  font: 100% "Futura", Arial, sans-serif;
   
 }
 
-.profile_container {
-  margin: 0 auto;
-  width:330px;
+
+/*************/
+/* PROJECTS  */
+/*************/
+
+/* grid: 1 to 1.6*/
+.grid {
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.column {
+  /* on media, change to 100%*/
+  width: 50%;
+  float: left;
+}
+.column:first-child > .project-wrapper {
+  padding-right: 16px;
+}
+.column:last-child > .project-wrapper {
+  padding-left: 16px;
+}
+
+.project-wrapper:not(:last-child) {
+  padding-bottom: 20px;
+}
+.project {
+  width: 100%;
+  height: 0;
+  padding-bottom: 62.5%;
   position: relative;
-  -webkit-transform: translateY(-40%);
-  -ms-transform:  translateY(-40%);
-  top: 45%;
-
+  background-color: rgba(154, 150, 144, 0.45);
 }
-
-.name {
-  font: 30px 'Exo', Arial, sans-serif;
-
-  text-align: center;
-  color: hsla(20,100%,10%,0.7);
-  height: 40px;
-  position:relative;
-
+.project:hover {
+  background-color: rgba(180,180,180, 0.4)
 }
-
-.education {
-
-  height: 40px;
-  
-  padding-bottom : 12px;
-  text-align: center;
-  color: hsla(20,100%,25%,0.4);  
-}
-
-.education #school, #major{
-  
-  
+.project.spacer {
+  background-color: rgba(0,0,0,0);
 }
 
 .image {
-  position: relative;
-  left: 9px;
-  top: -5px;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
 }
 
-.blurb {
-  color:hsla(20,100%,10%,0.7);
-  position: relative;
-  width: 279px; 
-  left:22px;
-  text-align: justify;
-  text-indent: 18px;
+/*************/
+/* banner     */
+/*************/
+.banner {
+  width: 100%;
+  height: 412px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.banner-image {
+  height: 100%;
+  background-size: cover;
+  background-image: url(../images/about.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 66%;
 }
 
-a:link, a:visited{
-  text-decoration:none;
-  font:'Poiret One', Arial, cursive;
-  color:hsla(20,100%,25%,0.4)
+.banner-title {
+  max-width: 450px;
+}
+.banner-text {
+  display: inline-block;
+  padding: 0 3px;
+  color: white;
+  font-size: 210%;
+  background-color: rgba(0,0,0,0.33);
+}
+.banner-text > span {
+  display: inline-block;
+  width: 6px;
+}
+.banner-text:first-child {
+  margin: 40px 0 0 40px;
+}
+.banner-text:last-child {
+  margin: 0 0 0 40px;
 }
 
-a:hover{
-  color: hsla(20,100%,10%,0.7)
+/*************/
+/* nav     */
+/*************/
+.nav {
+  line-height: 1.6em;
+  text-transform: uppercase;
+  max-width: 900px;
+  padding: 20px 0 0 0;
+  margin: auto;
+  text-align: center;
 }
-
-.links{
-  width: 180px;
-  left: 121px;
-  position: initial;
-  top: 1rem;  
+.nav > span {
+  line-height: 26px;
 }
-
-
-i.icon {
-  line-height: 2.5;
+.about-nav {
+  color: rgba(154, 150, 144, 0.45);
 }
-
-.ui.grid {
-  margin:0;
-  margin-left: 5.45rem;
-}
-.ui.grid>.column:not(.row), .ui.grid>.row>.column {
-  font-size: 1.8rem;
-}
-
-#file{
-  font-size: 1.5rem;
-  line-height: 3;
-  margin-left: .45rem;
-}
-
