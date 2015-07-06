@@ -28,7 +28,9 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + '/client'));
+app.use(express.static(__dirname + '/public'));
+
 
 //makes db accessible to router
 app.use(function(req, res, next) {

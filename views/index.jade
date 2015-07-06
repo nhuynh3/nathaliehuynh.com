@@ -1,12 +1,19 @@
 extends layout
 
 block content
-  div.banner
-    div.banner-image
-      div.banner-title
-        div.banner-text NATHALIE <span> </span>HUYNH 
-        div.banner-text WEB DEV + DESIGN 
-  div(ng-controller="HomeController as homeCtrl")
-    div.nav
-      a(href="").about-nav < about
-      a(href="").project-nav projects >
+    div.container
+      div.banner
+        div.banner-image
+          div.banner-title
+            div.banner-text NATHALIE <span> </span>HUYNH 
+            div.banner-text WEB DEV + DESIGN 
+      div(ng-controller="HomeController as homeCtrl")
+        div.nav
+          a(ng-click="renderAboutView()" ng-class="{'selected': isProjectView}").nav < about
+          a(ng-click="renderProjectView()" ng-class="{'selected': !isProjectView}").nav projects >
+        div(ng-switch on="isProjectView")
+          div(ng-switch-when="true")
+            div(ng-include="'/projects.html'")
+          div(ng-switch-when="false")
+            div(ng-include="'/about.html'")
+    footer.contact email // linkedin // github // instagram

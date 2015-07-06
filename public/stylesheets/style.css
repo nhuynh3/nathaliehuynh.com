@@ -77,7 +77,13 @@ body, html {
 .column {
   /* on media, change to 100%*/
   width: 50%;
+  padding-bottom: 105px;
+}
+.column:first-child {
   float: left;
+}
+.column:last-child {
+  float: right;
 }
 .column:first-child > .project-wrapper {
   padding-right: 16px;
@@ -106,7 +112,6 @@ body, html {
 .image {
   width: 100%;
   height: 100%;
-  background-color: gray;
 }
 
 /*************/
@@ -151,7 +156,7 @@ body, html {
 /*************/
 /* nav     */
 /*************/
-.nav {
+div.nav {
   line-height: 1.6em;
   text-transform: uppercase;
   max-width: 900px;
@@ -159,9 +164,24 @@ body, html {
   margin: auto;
   text-align: center;
 }
-.nav > span {
-  line-height: 26px;
-}
-.about-nav {
+
+.selected.nav {
   color: rgba(154, 150, 144, 0.45);
+}
+
+/*************/
+/* footer   */
+/*************/
+.container {
+  min-height: 100%;
+  margin: 0 auto -145px;
+}
+.container:after {
+  content:"";
+  display: block;
+}
+.contact, .container:after {
+  max-width: 900px;
+  padding: 20px;
+  margin: 40px auto;
 }
