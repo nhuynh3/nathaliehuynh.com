@@ -42,6 +42,10 @@ q, blockquote {
     content: "";
     content: none; }
 
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
 a img {
   border: none; }
 
@@ -60,50 +64,65 @@ body, html {
   
 }
 
-
-/*************/
-/* PROJECTS  */
-/*************/
-
-/* grid: 1 to 1.6*/
-.grid {
+/********************/
+/* GENERAL PURPOSE  */
+/********************/
+.grid-wrapper {
   width: 100%;
-  height: 100%;
   max-width: 900px;
   padding: 20px;
   margin: 20px auto;
+}
+.grid {
+  width: 100%;
+  display: inline-block;
+}
+
+.title {
+  position: relative;
+  right: 0;
 }
 
 .column {
   /* on media, change to 100%*/
   width: 50%;
-  padding-bottom: 105px;
+  padding-bottom: 25px;
 }
-.column:first-child {
+.column:nth-child(odd) {
   float: left;
 }
-.column:nth-child(2) {
+.column:nth-child(even) {
   float: right;
 }
-.column:first-child > .project-wrapper {
+.column:first-child > .box-wrapper {
   padding-right: 16px;
 }
-.column:nth-child(2) > .project-wrapper {
+.column:nth-child(2) > .box-wrapper {
   padding-left: 16px;
 }
 
-.project-wrapper:not(:last-child) {
+.box-wrapper:not(:last-child) {
   padding-bottom: 20px;
 }
-.project {
+.box {
   width: 100%;
-  height: 0;
-  padding-bottom: 62.5%;
-  position: relative;
-  background-color: rgba(154, 150, 144, 0.45);
+}
+
+/*************/
+/* PROJECTS  */
+/*************/
+
+/* grid-wrapper: 1 to 1.6*/
+.project {
+  background-color: #c9c6c2;
 }
 .project:hover {
   background-color: rgba(180,180,180, 0.4)
+}
+.project.box {
+  height: 0;
+  padding-bottom: 62.5%;
+  position: relative;
 }
 .project.spacer {
   background-color: rgba(0,0,0,0);
@@ -117,13 +136,58 @@ body, html {
 /*************/
 /* about     */
 /*************/
-.grid > .horizontal-line {
+about.grid-wrapper {
+  padding-bottom: 50px;
+}
+.grid-wrapper > .horizontal-line {
   float: left;
+  width: 100%;
 }
 
-.about > .column {
-  padding-bottom: 58px;
+.blurb.box-wrapper {
+  display: inline;
 }
+.blurb.box, .courses.box {
+  /*background-color: gray;*/
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 26em;
+  margin: 0 auto;
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 1.6em;
+  text-align: justify;
+}
+
+.courses.box {
+  padding-top: 25px;
+}
+ul {
+  line-height: 4em;
+}
+li.course {
+  padding-left: 50px;
+  line-height: 2.2em;
+  text-indent: -18px;
+  max-width: 22em;
+}
+li.hidden {
+  color: white;
+}
+
+.center-pop {
+  text-align: center;
+}
+.color-pop {
+  color: #c9c6c2;
+}
+.up-pop {
+  line-height: 1.8em;
+  font-size: 18px;
+  color: #c9c6c2;
+  text-align: center;
+}
+
 
 
 /*************/
@@ -145,6 +209,7 @@ body, html {
 }
 
 .banner-title {
+  cursor: pointer;
   max-width: 450px;
 }
 .banner-text {
@@ -156,7 +221,7 @@ body, html {
 }
 .banner-text > span {
   display: inline-block;
-  width: 6px;
+  width: 9px;
 }
 .banner-text:first-child {
   margin: 40px 0 0 40px;
@@ -177,10 +242,14 @@ div.nav {
   text-align: center;
 }
 
-.selected.nav {
-  color: rgba(154, 150, 144, 0.45);
+.action-link {
+  color: #c9c6c2;
+  cursor: pointer;
 }
 
+.action-link:hover {
+  color: #97938D;
+}
 /*************/
 /* footer   */
 /*************/
@@ -195,41 +264,50 @@ div.nav {
 .contact, .container:after {
   max-width: 900px;
   padding: 20px;
-  margin: 40px auto;
+  margin: 40px auto 0px;
+  color: #97938D;
 }
 .horizontal-line {
   border: none;
-  background-color: rgb(154, 150, 144);
-  color: rgb(154, 150, 144);
+  background-color: #97938D;
+  color: #97938D;
   height: 1px;
 }
 
 /*************/
 /* MOBILE   */
 /*************/
+@media (max-width: 750px) {
+  .courses.column {
+    width: 100%;
+  }
+  .courses.box {
+    margin: 0;
+  }
+}
 @media (max-width: 600px) {
   .column {
     width: 100%;
     padding: 20px;
   }
-  .column:first-child > .project-wrapper {
+  .column:first-child > .box-wrapper {
     padding-right: 0px;
   }
   .column:nth-child(2) {
-    padding: 20px 20px 40px 20px;
+    padding: 20px 20px 0px 20px;
   }
-  .column:nth-child(2) > .project-wrapper {
+  .column:nth-child(2) > .box-wrapper {
     padding-left:0;
   }
 
   .container {
     min-height: 100%;
-    margin: 0 auto -80px;
+    margin: 0 auto -90px;
   }
   .container:after {
     content:"";
     display: block;
-}
+  }
   .contact {
     margin: 15px auto;
     width: 21em;
