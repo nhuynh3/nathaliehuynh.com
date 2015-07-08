@@ -146,9 +146,10 @@ about.grid-wrapper {
 .blurb, .courses {
   font-family: "Lato";
   line-height: 1.6em;
+}
+.blurb {
   max-width: 26em;
 }
-
 .blurb.box-wrapper {
   display: inline;
 }
@@ -164,6 +165,9 @@ about.grid-wrapper {
   color: #c9c6c2;
   text-align: center;
   line-height: 1.2em;
+}
+.color-pop {
+  color: #c9c6c2;
 }
 .up-pop {
   line-height: 1.8em;

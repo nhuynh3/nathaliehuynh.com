@@ -4,8 +4,8 @@ block content
     div.container
       div(ng-controller="HomeController as homeCtrl")
         div.nav
-          div(ng-click="renderAboutView()" ng-class="{'action-link': isProjectView}").nav-link < about
-          div(ng-click="renderProjectView()" ng-class="{'action-link': !isProjectView}").nav-link projects >
+          a(href="/about" ng-class="{'action-link': isNotActive('/about')}").nav-link < about
+          a(href="/" ng-class="{'action-link': isNotActive('/')}").nav-link projects >
         div.contact <span><a class="action-link" href="mailto:nhuynh3@mit.edu">email</a></span> // <span><a class="action-link" href="https://www.linkedin.com/pub/nathalie-huynh/63/1/1aa" target="_blank">linkedin</a></span> // <span><a class="action-link" href="https://github.com/nhuynh3" target="_blank">github</a></span>
           div.horizontal-line
         div.banner
@@ -13,11 +13,7 @@ block content
             div(ng-click="renderAboutView()").banner-title
               div.banner-text NATHALIE <span> </span>HUYNH 
               div.banner-text WEB DEV + DESIGN 
-        div(ng-switch on="isProjectView")
-          div(ng-switch-when="true")
-            div(ng-include="'/projects.html'")
-          div(ng-switch-when="false")
-            div(ng-include="'/about.html'")
+        div(ng-view)
     footer
       div.horizontal-line
       

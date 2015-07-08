@@ -1,16 +1,29 @@
-angular
-  .module("nathaliesApp",[])
-  .controller("HomeController", HomeController);
+var nApp = angular.module("nathaliesApp",['ngRoute']);
 
-function HomeController($scope, $rootScope) {
-  $scope.isProjectView = true;
+nApp.controller("HomeController", HomeController);
 
-  $scope.renderAboutView = function() {
-    $scope.isProjectView = false;
-  }
+nApp.config(function($routeProvider, $locationProvider) {
+    $routeProvider
+      .when('/', {
+        templateUrl: "projects.html",
+        controller: 'HomeController'
+      })
+      .when('/about', {
+        templateUrl: "about.html",
+        controller: 'HomeController'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
 
-  $scope.renderProjectView = function() {
-    $scope.isProjectView = true
+    $locationProvider.html5Mode(true);
+  });
 
-  }
-}
+function HomeController($scope, $rootScope, $location) {
+  $scope.isNotActive = function(viewLocation) {
+    if ($location.path() == viewLocation) {
+      return false
+    } else {
+      return true
+    }
+  }}
