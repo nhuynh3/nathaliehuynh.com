@@ -1,5 +1,6 @@
 var express = require('express');
-var path = require('path');
+var routes = require('./routes');
+
 var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -9,7 +10,7 @@ var mongo = require('mongodb');
 var monk = require('monk');
 var db = monk('localhost:27017/nodetest1');
 
-var routes = require('./routes/index');
+
 
 var app = express();
 
@@ -31,13 +32,16 @@ app.use(express.static(__dirname + '/client'));
 app.use(express.static(__dirname + '/public'));
 
 
+
 //makes db accessible to router
 app.use(function(req, res, next) {
     req.db = db;
     next();
 });
 
-app.use('/', routes);
+app.get('/', routes.index);
+app.get('/partials/:name', routes.partials);
+app.get('*', routes.index);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
