@@ -165,6 +165,10 @@ about.grid-wrapper {
   text-align: center;
   line-height: 1.2em;
 }
+.up-pop {
+  line-height: 1.8em;
+  color: #c9c6c2;
+}
 
 .courses.box {
   padding-top: 25px;
@@ -181,16 +185,6 @@ li.course {
 li.hidden {
   color: white;
 }
-
-.color-pop {
-  color: #c9c6c2;
-}
-.up-pop {
-  line-height: 1.8em;
-  color: #c9c6c2;
-}
-
-
 
 /*************/
 /* banner     */
