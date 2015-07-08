@@ -1,14 +1,12 @@
 var express = require('express');
 var routes = require('./routes');
 
-var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var mongo = require('mongodb');
-var monk = require('monk');
-var db = monk('localhost:27017/nodetest1');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/projects');
 
 
 
@@ -23,7 +21,6 @@ app.listen(port, function() {
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
-app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
@@ -41,6 +38,8 @@ app.use(function(req, res, next) {
 
 app.get('/', routes.index);
 app.get('/partials/:name', routes.partials);
+
+// redirect all other routes to index
 app.get('*', routes.index);
 
 /// catch 404 and forward to error handler

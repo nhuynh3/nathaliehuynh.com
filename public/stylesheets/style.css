@@ -114,7 +114,9 @@ body, html {
 
 /* grid-wrapper: 1 to 1.6*/
 .project {
-  background-color: #c9c6c2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 66%;
 }
 .project:hover {
   background-color: rgba(180,180,180, 0.4)
@@ -123,9 +125,6 @@ body, html {
   height: 0;
   padding-bottom: 62.5%;
   position: relative;
-}
-.project.spacer {
-  background-color: rgba(0,0,0,0);
 }
 
 .image {
@@ -136,7 +135,7 @@ body, html {
 /*************/
 /* about     */
 /*************/
-about.grid-wrapper {
+.about.grid-wrapper {
   padding-bottom: 50px;
 }
 .grid-wrapper > .horizontal-line {
@@ -209,7 +208,6 @@ li.hidden {
 }
 
 .banner-title {
-  cursor: pointer;
   max-width: 450px;
 }
 .banner-text {

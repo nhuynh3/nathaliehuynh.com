@@ -1,33 +1,34 @@
-.grid-wrapper
+div(ng-controller="ProjectsController as projectsCtrl")
+  .grid-wrapper
     .grid
         .column
           .box-wrapper
-            .project.box
-              | FOLD
+            .project.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/homepage_small.jpg')")
+              a(href="projects/fold") {{project}}
               .image
           |       
           .box-wrapper
-            .project.box
-              | MIT HKN
+            .project.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/homepage_small.jpg')")
+              a(href="projects/hkn") MIT HKN
               .image
           |       
           .box-wrapper
-            .project.box
-              | ENAMELING
+            .project.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/homepage_small.jpg')")
+              a(href="projects/metalwork") METALWORK
               .image
         |     
         .column
           .box-wrapper
-            .project.box
-              | NOMAD
+            .project.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/homepage_small.jpg')")
+              a(href="projects/nomad") NOMAD
               .image
           |       
           .box-wrapper
-            .project.box
-              | BUYFORBABY
+            .project.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/homepage_small.jpg')")
+              a(href="projects/buyforbaby") BUYFORBABY
               .image
           |       
           .box-wrapper
-            .project.box
-              | BLACKSMITHING
+            .project.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/homepage_small.jpg')")
+              a(href="projects/anisotropic") ANISOTROPIC
               .image
