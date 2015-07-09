@@ -114,17 +114,24 @@ body, html {
 
 /* grid-wrapper: 1 to 1.6*/
 .project {
-  background-size: cover;
+  opacity: 0.74;
   background-repeat: no-repeat;
   background-position: 50% 66%;
 }
 .project:hover {
-  background-color: rgba(180,180,180, 0.4)
+  opacity: 1;
 }
 .project.box {
   height: 0;
-  padding-bottom: 62.5%;
+  padding-bottom: 66.67%;
   position: relative;
+}
+
+.project.fold {
+  background-position: 50% 0%;
+}
+.project.nomad {
+  background-position: 50% 0%;
 }
 
 .image {

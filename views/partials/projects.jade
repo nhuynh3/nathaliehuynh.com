@@ -1,34 +1,9 @@
 div(ng-controller="ProjectsController as projectsCtrl")
   .grid-wrapper
     .grid
-        .column
-          .box-wrapper
-            .project.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/homepage_small.jpg')")
-              a(href="projects/fold") {{project}}
+        div(ng-repeat="column in projects").column
+          div(ng-repeat="project in column").box-wrapper
+            .project.box(class="{{project.file_name}}" style="background-image: url('http://assets.nathaliehuynh.com/project-assets/{{project.file_name}}/homepage_small2.png')")
+              a(href="projects/{{project.file_name}}")
               .image
-          |       
-          .box-wrapper
-            .project.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/homepage_small.jpg')")
-              a(href="projects/hkn") MIT HKN
-              .image
-          |       
-          .box-wrapper
-            .project.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/homepage_small.jpg')")
-              a(href="projects/metalwork") METALWORK
-              .image
-        |     
-        .column
-          .box-wrapper
-            .project.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/homepage_small.jpg')")
-              a(href="projects/nomad") NOMAD
-              .image
-          |       
-          .box-wrapper
-            .project.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/homepage_small.jpg')")
-              a(href="projects/buyforbaby") BUYFORBABY
-              .image
-          |       
-          .box-wrapper
-            .project.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/homepage_small.jpg')")
-              a(href="projects/anisotropic") ANISOTROPIC
-              .image
+          |         

@@ -2,3 +2,4 @@ bootstrap-3.2.0-dist/
 node_modules/
 website.sublime-project
 website.sublime-workspace
+config/
