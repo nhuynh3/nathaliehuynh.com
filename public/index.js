@@ -2,32 +2,38 @@ var PROJECTS = {
     fold: {
       name: "FOLD",
       file_name: "fold",
-      blurb: "loodeedoo"
-    },
-    hkn: {
-      name: "MIT HKN",
-      file_name: "hkn",
-      blurb: "loodeedoo"
+      blurb: "full stack development",
+      intro: "Coming soon!"
+    },    
+    buyforbaby: {
+      name: "BUYFORBABY",
+      file_name: "buyforbaby",
+      blurb: "UI/UX design & front end development",
+      intro: "Coming soon!"
     },
     metalwork: {
       name: "METALWORK",
       file_name: "metalwork",
-      blurb: "loodeedoo"
+      blurb: "enameling & blacksmithing",
+      intro: "Coming soon!"
     },
     nomad: {
       name: "NOMAD",
       file_name: "nomad" ,
-      blurb: "loodeedoo"
+      blurb: "front end development",
+      intro: "Coming soon!"
     },
-    buyforbaby: {
-      name: "BUYFORBABY",
-      file_name: "buyforbaby",
-      blurb: "loodeedoo"
+    hkn: {
+      name: "HKN",
+      file_name: "hkn",
+      blurb: "full stack development",
+      intro: "Coming soon!"
     },
     anisotropic: {
       name: "ANISOTROPIC",
       file_name: "anisotropic",
-      blurb: "loodeedoo"
+      blurb: "lighting & installation design",
+      intro: "Coming soon!"
     }
 }
 
@@ -73,11 +79,17 @@ function HomeController($scope, $rootScope, $location) {
 }
 
 function ProjectsController($scope) {
-  $scope.projects = [[PROJECTS.fold, PROJECTS.hkn, PROJECTS.metalwork],
-    [PROJECTS.nomad, PROJECTS.buyforbaby, PROJECTS.anisotropic]]
+  $scope.projects = [[PROJECTS.fold, PROJECTS.buyforbaby, PROJECTS.metalwork],
+    [PROJECTS.nomad, PROJECTS.hkn, PROJECTS.anisotropic]]
 }
 
 function ProjController($scope, $routeParams) {
-  var project = $routeParams.name;
-  $scope.title = PROJECTS[project]["name"];
+  var projectName = $routeParams.name,
+      project     = PROJECTS[projectName]
+
+  $scope.project = {
+    "title":  project["name"],
+    "name":  project["file_name"],
+    "intro": project["intro"]
+  }
 }

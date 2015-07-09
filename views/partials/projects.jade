@@ -3,7 +3,11 @@ div(ng-controller="ProjectsController as projectsCtrl")
     .grid
         div(ng-repeat="column in projects").column
           div(ng-repeat="project in column").box-wrapper
-            .project.box(class="{{project.file_name}}" style="background-image: url('http://assets.nathaliehuynh.com/project-assets/{{project.file_name}}/homepage_small2.png')")
-              a(href="projects/{{project.file_name}}")
-              .image
+            a(href="projects/{{project.file_name}}")
+              .project-title
+                .banner-text.name {{project.name}}
+                .banner-text.blurb {{project.blurb}} 
+              .project.box(class="{{project.file_name}}" style="background-image: url('http://assets.nathaliehuynh.com/project-assets/{{project.file_name}}/homepage_small2.png')")
+                
+            
           |         

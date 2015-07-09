@@ -1,2 +1,6 @@
 div(ng-controller="ProjController as projCtrl")
-  | {{title}}
+  .grid-wrapper
+    .proj {{project.title}}
+    .proj-intro {{project.intro}}
+  a(href="/")
+    .back
