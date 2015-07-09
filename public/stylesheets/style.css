@@ -74,6 +74,7 @@ body, html {
   margin: 20px auto;
 }
 .grid {
+  overflow: hidden;
   width: 100%;
   display: inline-block;
 }
@@ -114,6 +115,7 @@ body, html {
 
 /* grid-wrapper: 1 to 1.6*/
 .project {
+  opacity: .6;
   background-repeat: no-repeat;
   background-position: 50% 0%;
 }
@@ -128,7 +130,7 @@ body, html {
 }
 
 .project-title {
-  opacity: 0;
+  opacity: 1;
   position: relative;
   height: 0;
   z-index: 1;
@@ -142,11 +144,11 @@ body, html {
 .project-title > .banner-text.blurb{
   font-size: 105%;
 }
-.box-wrapper:hover > a > .project-title {
-  opacity: 1;
+.box-wrapper:hover > a > .project-title.banner-text.blurb {
+  opacity: 0;
 }
 .box-wrapper:hover > a > .project {
-  opacity: 0.38;
+  opacity: 1;
 }
 
 /*************/
@@ -164,10 +166,6 @@ body, html {
   width: 100%;
   text-align: center;
 }
-.proj-intro {
-
-}
-
 
 /*************/
 /* about     */
