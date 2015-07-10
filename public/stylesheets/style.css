@@ -115,7 +115,6 @@ body, html {
 
 /* grid-wrapper: 1 to 1.6*/
 .project {
-  opacity: .6;
   background-repeat: no-repeat;
   background-position: 50% 0%;
 }
@@ -135,20 +134,26 @@ body, html {
   height: 0;
   z-index: 1;
 }
+.project-title{
+  opacity: 0;
+}
+
 .project-title > .banner-text {
-  font-size: 130%;
+  background-color: rgba(0,0,0,0.63);
 }
 .project-title > .banner-text.name{
+  font-size: 130%;
   margin: 32px 350px 0 32px;
 }
 .project-title > .banner-text.blurb{
   font-size: 105%;
 }
-.box-wrapper:hover > a > .project-title.banner-text.blurb {
-  opacity: 0;
+
+.box-wrapper:hover > a > .project-title {
+  opacity: 1;
 }
 .box-wrapper:hover > a > .project {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 /*************/
@@ -240,7 +245,7 @@ li.hidden {
   background-image: url("http://assets.nathaliehuynh.com/profile-assets/about.jpg");
   background-repeat: no-repeat;
   background-position: 50% 52%;
-  opacity: 0.38;
+  opacity: 0.9;
 }
 
 .banner-title {
