@@ -113,10 +113,19 @@ body, html {
   color: #3B4745;
 }
 
-.text-blurb {
-  max-width: 25em;
-  /*margin: 0 auto;*/
+.blurb {
+  font-family: "lato"; 
+  line-height: 1.6em;
 }
+
+/*************/
+/* RESUME    */
+/*************/
+
+.resume > .blurb {
+  max-width: 25em;
+}
+
 /*************/
 /* PROJECTS  */
 /*************/
@@ -190,24 +199,23 @@ body, html {
   float: left;
   width: 100%;
 }
-.blurb, .courses {
-  font-family: "Lato";
-  line-height: 1.6em;
-}
-.blurb {
-  max-width: 26em;
-  text-align: justify;
-}
+
 .blurb.box-wrapper {
   display: inline;
 }
-.blurb.box, .courses.box {
+
+.about-blurb {
+  max-width: 26em;
+  text-align: justify;
+}
+
+.about-blurb.box, .courses.box {
   font-size: 16px;
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
 }
-.blurb.blurb-title {
+.about-blurb-title {
   font-size: 32px;
   color: #c9c6c2;
   text-align: center;
@@ -357,9 +365,6 @@ footer > .horizontal-line {
   }
   .courses.box {
     margin: 0;
-  }
-  .blurb.blurb-title {
-    font-size: 29px;
   }
   .project-title.buyforbaby{
     width: 200px;
