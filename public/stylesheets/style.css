@@ -251,7 +251,7 @@ li.hidden {
 .banner-title {
   position: absolute;
   max-width: 450px;
-  top: 95px;
+  top: 10px;
 }
 .banner-text {
   display: inline-block;
@@ -275,18 +275,28 @@ li.hidden {
 /*************/
 /* nav     */
 /*************/
+div.nav-bar {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+  padding: 10px 0;
+}
+
 div.nav {
   font-size: 20px;
   text-transform: uppercase;
-  max-width: 900px;
-  padding: 7px 0 0 0;
-  margin: 16px auto 0px;
   text-align: center;
+}
+
+div.content {
+  position: relative;
+  top: 70px;
 }
 
 .nav-link {
   display: inline-block;
-  height: 40px;
+  height: 30px;
 }
 .action-link {
   color: #c9c6c2;
@@ -319,7 +329,7 @@ div.nav {
   line-height: 1.6em;
 }
 footer {
-  margin: 115px auto 30px;
+  margin: 200px auto 30px;
 }
 .horizontal-line {
   border: none;
@@ -368,20 +378,16 @@ footer {
   }
   .contact {
     text-align: center;
-    padding: 0px 0px 10px
+    padding: 5px 0px 10px
   }
   .contact > .horizontal-line {
     display: none;
   }
   footer {
-    margin: 115px auto 30px;
     text-align: center;
   }
   .banner-text {
     font-size: 150%;
-  }
-  .banner-title {
-    top: 108px;
   }
 }
 
