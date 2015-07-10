@@ -53,6 +53,10 @@ nApp.config(function($routeProvider, $locationProvider) {
         templateUrl: "partials/projects",
         controller: 'ProjectsController'
       })
+      .when('/resume', {
+        templateUrl: "partials/resume",
+        controller: 'HomeController'
+      })      
       .when('/about', {
         templateUrl: "partials/about",
         controller: 'HomeController'

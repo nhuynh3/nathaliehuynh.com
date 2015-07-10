@@ -61,7 +61,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body, html {
   height: 100%;
   font: 100% "Futura", Arial, sans-serif;
-  
+  color: #3B4745;
 }
 
 /********************/
@@ -109,6 +109,14 @@ body, html {
   width: 100%;
 }
 
+.black {
+  color: #3B4745;
+}
+
+.text-blurb {
+  max-width: 25em;
+  /*margin: 0 auto;*/
+}
 /*************/
 /* PROJECTS  */
 /*************/
@@ -280,7 +288,7 @@ div.nav-bar {
   width: 100%;
   background-color: white;
   z-index: 2;
-  padding: 10px 0;
+  padding: 10px 0 0;
 }
 
 div.nav {
@@ -297,12 +305,12 @@ div.content {
 .nav-link {
   display: inline-block;
   height: 30px;
+  padding: 8px 0;
 }
+
 .action-link {
   color: #c9c6c2;
   cursor: pointer;
-  padding: 8px 0;
-  margin: -8px 0;
 }
 
 .action-link:hover {
@@ -321,23 +329,24 @@ div.content {
 }
 .contact, .container:after, footer {
   max-width: 900px;
-  padding: 0 20px;
-  color: #97938D;
+  padding: 2px 20px 0;
 }
 .contact {
   margin: 0 auto;
   line-height: 1.6em;
+  font-size: 10pt;
 }
 footer {
   margin: 200px auto 30px;
 }
 .horizontal-line {
   border: none;
-  background-color: #97938D;
-  color: #97938D;
+  background-color: #3B4745;
+  height: 3px;
+}
+footer > .horizontal-line {
   height: 1px;
 }
-
 
 /*************/
 /* MOBILE   */
@@ -352,6 +361,10 @@ footer {
   .blurb.blurb-title {
     font-size: 29px;
   }
+  .project-title.buyforbaby{
+    width: 200px;
+  }
+
 }
 @media (max-width: 600px) {
   .column {
@@ -378,16 +391,58 @@ footer {
   }
   .contact {
     text-align: center;
-    padding: 5px 0px 10px
+    padding: 5px 0px 0px;
   }
-  .contact > .horizontal-line {
-    display: none;
-  }
-  footer {
-    text-align: center;
-  }
+
   .banner-text {
     font-size: 150%;
   }
+
+  .project-title > .banner-text.name {
+    margin: 32px 350px 0 64px;
+  }
+  
+  .project-title > .banner-text.blurb {
+    margin: 0 0 0 64px;
+  }
+  
+  .project.box {
+    margin: 0 auto;
+    width: 70vw;
+  }
+  
+  .project-title.buyforbaby{
+    width: auto;
+  }
+
+  .project-title.buyforbaby{
+    width: auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+@media (max-width: 460px) {
+  .project.box {
+    width: 100%;
+  }
+
+  .project.nomad, .project.fold {
+    background-position: 0% 0%;
+  }
+  
+  .project-title > .banner-text.name {
+    margin: 32px 350px 0 32px;
+  }
+  .project-title > .banner-text.blurb {
+    margin: 0 0 0 32px;
+  }
+  .project-title.buyforbaby{
+    width: 200px;
+  }
+
+
+
 }
 
