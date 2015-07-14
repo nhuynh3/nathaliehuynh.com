@@ -141,6 +141,10 @@ body, html {
   padding-bottom: 66.67%;
   position: relative;
 }
+.project:not(.hkn):not(.metalwork) {
+  background-size: cover;
+}
+
 .project.hkn {
   background-position: 50% 66.6%;
 }

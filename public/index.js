@@ -3,13 +3,15 @@ var PROJECTS = {
       name: "FOLD",
       file_name: "fold",
       blurb: "full stack development",
-      intro: "Coming soon!"
+      intro: "Coming soon!",
+      link: "//readfold.com"
     },    
     buyforbaby: {
       name: "BUYFORBABY",
       file_name: "buyforbaby",
       blurb: "UI/UX design & front end development",
-      intro: "Coming soon!"
+      intro: "Coming soon!",
+      link: "//web.mit.edu/ahammond/Public/813/"
     },
     metalwork: {
       name: "METALWORK",
@@ -21,13 +23,15 @@ var PROJECTS = {
       name: "NOMAD",
       file_name: "nomad" ,
       blurb: "front end development",
-      intro: "Coming soon!"
+      intro: "Coming soon!",
+      link: "//nomadhub.herokuapp.com"
     },
     hkn: {
       name: "HKN",
       file_name: "hkn",
       blurb: "full stack development",
-      intro: "Coming soon!"
+      intro: "Coming soon!",
+      link: "//hkn.mit.edu"
     },
     anisotropic: {
       name: "ANISOTROPIC",
@@ -84,7 +88,7 @@ function HomeController($scope, $rootScope, $location) {
 
 function ProjectsController($scope) {
   $scope.projects = [[PROJECTS.fold, PROJECTS.buyforbaby, PROJECTS.metalwork],
-    [PROJECTS.nomad, PROJECTS.hkn, PROJECTS.anisotropic]]
+    [PROJECTS.nomad, PROJECTS.anisotropic, PROJECTS.hkn]]
 }
 
 function ProjController($scope, $routeParams) {
@@ -94,6 +98,7 @@ function ProjController($scope, $routeParams) {
   $scope.project = {
     "title":  project["name"],
     "name":  project["file_name"],
-    "intro": project["intro"]
+    "intro": project["intro"],
+    "link": project["link"]
   }
 }
