@@ -60,7 +60,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body, html {
   height: 100%;
-  font: 100% "Futura", Arial, sans-serif;
+  font: 100% "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #3B4745;
 }
 
@@ -154,6 +154,7 @@ body, html {
   position: relative;
   height: 0;
   z-index: 1;
+  font-family: "lato"
 }
 .project-title{
   opacity: 0;
@@ -221,23 +222,23 @@ body, html {
 }
 .about-blurb-title {
   font-size: 32px;
-  color: #c9c6c2;
+  color: #D48300;
   text-align: center;
   line-height: 1.2em;
 }
 .color-pop {
-  color: #c9c6c2;
+  color: #D48300;
 }
 .up-pop {
   line-height: 1.8em;
-  color: #c9c6c2;
+  color: #D48300;
 }
 
 .courses.box {
   padding-top: 25px;
 }
 ul {
-  line-height: 4em;
+  line-height: 3em;
 }
 li.course {
   padding-left: 50px;
@@ -258,6 +259,7 @@ li.hidden {
   max-width: 900px;
   margin: 0 auto;
   padding: 10px 20px;
+  font-family: "lato"
 }
 .banner-image {
   height: 100%;
@@ -354,9 +356,6 @@ footer {
 .horizontal-line {
   border: none;
   background-color: #3B4745;
-  height: 3px;
-}
-footer > .horizontal-line {
   height: 1px;
 }
 
