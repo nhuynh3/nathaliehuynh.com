@@ -91,7 +91,7 @@ function ProjectsController($scope) {
     [PROJECTS.nomad, PROJECTS.anisotropic, PROJECTS.hkn]]
 }
 
-function ProjController($scope, $routeParams) {
+function ProjController($scope, $routeParams, $http) {
   var projectName = $routeParams.name,
       project     = PROJECTS[projectName]
 

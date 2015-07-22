@@ -1,5 +1,51 @@
 div(ng-controller="ProjController as projCtrl")
   .grid-wrapper
     .proj {{project.title}}
-    .proj-intro {{project.intro}}
-      a(href="/").action-link <br><< Back to projects
+    div(ng-show="project.name == 'fold'")
+      .proj-info FOLD, a project out of MIT Media Lab’s Center for
+        | Civic Media is a modular, multimedia CMS that enables storytellers
+        | to better guide their readers through complex stories. 
+        br
+        br
+        | My contribution to FOLD, in which I worked on the features
+        | that allow authors to search for and integrate multimedia
+        | content into their stories and the interface for which users
+        | create, customize, and discover user accounts, was the subject
+        | of my senior thesis. This work was done in collaboration with Alexis Hope 
+        | (lead designer and HCI researcher), Joe Goldbeck
+        | (lead developer), and Kevin Hu. 
+        br
+        br
+        span.sub-title Background
+        br
+        | Hyperlinking and other methods used by authors to provide context,
+        | create unpredictable user experiences and risk user retention as a
+        | reader may find him/herself down a rabbit hole of loosely coupled information.
+        br
+        br
+        | On FOLD, authors are given more control over the context readers see. When a
+        | reader unfolds a story, he or she is presented with a horizontal bar of context
+        | intersecting the vertical scroll of cards which contains the main narrative.
+        | Each vertical narrative card can be framed by horizontal “context” cards containing
+        | videos, audio tracks, maps, gifs, data visualizations, pictures, tweets, or text.
+        | Adding and discovering these multimedia context cards is made easy through the FOLD
+        | authoring platform, which provides a consistent search, preview and selection
+        | interface that abstracts away the APIs of each media service.
+        br
+        br
+        | FOLD is an open-source project on 
+        a(href="https://github.com/readFOLD/FOLD").color-pop github
+        |  and is hosted at 
+        a(href="https://readfold.com/").color-pop readfold.com
+        |.
+    div(ng-show="project.name == 'buyforbaby'")
+      .proj-intro {{project.intro}}
+    div(ng-show="project.name == 'metalwork'")
+      .proj-intro {{project.intro}}
+    div(ng-show="project.name == 'nomad'")
+      .proj-intro {{project.intro}}
+    div(ng-show="project.name == 'hkn'")
+      .proj-intro {{project.intro}}
+    div(ng-show="project.name == 'anisotropic'")
+      .proj-intro {{project.intro}}
+    a(href="/").action-link <br>Back to projects

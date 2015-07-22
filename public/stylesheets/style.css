@@ -189,11 +189,20 @@ body, html {
   height: 300px;
   background: url("http://assets.nathaliehuynh.com/profile-assets/back.svg") no-repeat;
 }
-.proj, .proj-intro {
-  width: 100%;
+.proj {
+  position: relative;
+  line-height: 3em;
+  top: -20px;
   text-align: center;
 }
 
+.proj-info {
+  line-height: 1.6em;
+}
+.proj-info > .sub-title {
+  text-transform: uppercase;
+  line-height: 2.3em;
+}
 /*************/
 /* about     */
 /*************/
