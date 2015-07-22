@@ -39,13 +39,35 @@ div(ng-controller="ProjController as projCtrl")
         a(href="https://readfold.com/").color-pop readfold.com
         |.
     div(ng-show="project.name == 'buyforbaby'")
-      .proj-intro {{project.intro}}
+      .proj-info BuyForBaby is a baby registry that provides parents the ability to customize, organize and better account for items on their wish lists. 
+        br
+        br
+        | The final web application is a culmination of a semester of learning and applying the design process through ideation, user research to define user groups and goals, storyboarding, and iterations of prototyping and testing. BuyForBaby was developed in collaboration with teammates Aaron Hammond, Priya Kalluri and Lia Coleman for the User Interface Design and Implementation class at MIT.
+        br
+        br
+        span.sub-title Background
+        br
+        | After observing the fragmented and impersonal process of picking a gift for my sister’s first baby shower, I wondered how unnecessarily stressful it must be for parents to account for all the things they would need to care for their newborn. By studying more cases of registry use on both the gifter’s end and the parents’ (“giftee’s”) end, our team highlighted issues with the current landscape of registries and identified how a more specific and unifying interface layer could improve the shopping experience for both user groups.
     div(ng-show="project.name == 'metalwork'")
-      .proj-intro {{project.intro}}
+      .proj-info {{project.intro}}
     div(ng-show="project.name == 'nomad'")
-      .proj-intro {{project.intro}}
+      .proj-info Nomad placed 3rd in MIT’s month-long web programming competition, 6.470, and won special recognition for best fulfilling this year’s theme of “Around The World”.
+        br
+        br
+        | Nomad is a low-commitment travel blog that lets you explore a new place and find travelers in your area who share similar interests. This single page application was built using AngularJS and Express/Node.js in collaboration with Kamilla Tekiela and Dang Pham.
+        br
+        br
+        | You can quickly set up an account and check it out on 
+        a(href="nomadhub.herokuapp.com").color-pop nomadhub.herokuapp.com 
+        | or watch this short 
+        a(href="https://youtu.be/jF-Od0DgOw0").color-pop webcast 
+        | to get an idea of the site’s functionality.
     div(ng-show="project.name == 'hkn'")
-      .proj-intro {{project.intro}}
+      .proj-info This year I’ll be serving as a webmaster of the Eta Kappa Nu chapter at MIT alongside Kate Yu. Eta Kappa Nu (also known as HKN), is the honor society of IEEE.
+        | At MIT, HKN members work to improve the EECS department by developing and maintaining important resources used by the department. 
+        br
+        br
+        | In my capacity as webmaster, I am responsible for maintaining the many online resources used by the EECS department as well as improving these resources to better serve EECS students.
     div(ng-show="project.name == 'anisotropic'")
-      .proj-intro {{project.intro}}
+      .proj-info {{project.intro}}
     a(href="/").action-link <br>Back to projects
