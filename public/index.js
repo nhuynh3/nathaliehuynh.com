@@ -50,6 +50,7 @@ var nApp = angular.module("nathaliesApp",['ngRoute']);
 nApp.controller("HomeController", HomeController);
 nApp.controller("ProjectsController", ProjectsController);
 nApp.controller("ProjController", ProjController);
+nApp.directive("scrollOnClick", scrollOnClick);
 
 nApp.config(function($routeProvider, $locationProvider) {
     $routeProvider
@@ -100,5 +101,16 @@ function ProjController($scope, $routeParams, $http) {
     "name":  project["file_name"],
     "intro": project["intro"],
     "link": project["link"]
+  }
+}
+
+function scrollOnClick() {
+  return {
+    restrict: 'A',
+    link: function(scope, $el) {
+      $el.on('click', function() {
+        $("body").animate({scrollTop: 0}, "slow");
+      });
+    }
   }
 }

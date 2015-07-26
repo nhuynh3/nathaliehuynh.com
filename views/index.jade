@@ -5,16 +5,16 @@ block content
       div(ng-controller="HomeController as homeCtrl")
         div.nav-bar
           div.nav
-            a(href="/about" class="color-pop" ng-class="{'action-link': isNotActive('/about')}").nav-link about
+            a(scroll-on-click href="/about" class="color-pop" ng-class="{'action-link': isNotActive('/about')}").nav-link about
             | <span> | </span>
-            a(href="/" class="color-pop" ng-class="{'action-link': isNotActive('/')}").nav-link projects
+            a(scroll-on-click href="/" class="color-pop" ng-class="{'action-link': isNotActive('/')}").nav-link projects
           div.contact <span><a class="action-link" href="mailto:nhuynh3@mit.edu">email</a></span> | <span><a class="action-link" href="https://github.com/nhuynh3" target="_blank">github</a></span> | <span><a class="action-link" href="https:www.linkedin.com/pub/nathalie-huynh/63/1/1aa" target="_blank">linkedin</a></span> | <span><a class="action-link" href="resume">resume</a></span> 
             div.horizontal-line
         div.content
           div.banner
             div.banner-image
             div.banner-title
-              a(href='/')
+              a(scroll-on-click href='/')
                 div.banner-text.name NATHALIE <span> </span>HUYNH 
                 div.banner-text.blurb WEB DEV + DESIGN 
           div(ng-view)
