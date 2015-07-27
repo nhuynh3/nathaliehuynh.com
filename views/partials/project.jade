@@ -7,21 +7,27 @@ div(ng-controller="ProjController as projCtrl")
         | to better guide their readers through complex stories. 
         br
         br
-        | My contribution to FOLD, in which I worked on the features
-        | that allow authors to search for and integrate multimedia
-        | content into their stories and the interface for which users
-        | create, customize, and discover user accounts, was the subject
-        | of my senior thesis. This work was done in collaboration with Alexis Hope 
+        | My contribution enabled authors to search for and integrate multimedia
+        | content into FOLD. I also built the interface through which users
+        | created, customized, and discovered other FOLD profiles.
+        | This work was done in collaboration with Alexis Hope 
         | (lead designer and HCI researcher), Joe Goldbeck
         | (lead developer), and Kevin Hu. 
         br
         br
+        span.sub-title Technologies
+        br
+        span.pop Meteor.js, HTML/LESS, jQuery, MongoDB
+        br
+        br
+        | FOLD is an open-source project on 
+        a(href="https://github.com/readFOLD/FOLD").color-pop github
+        |  and is hosted at 
+        a(href="https://readfold.com/").color-pop readfold.com
+        |.
+        br
+        br
         span.sub-title Background
-        br
-        | Hyperlinking and other methods used by authors to provide context,
-        | create unpredictable user experiences and risk user retention as a
-        | reader may find him/herself down a rabbit hole of loosely coupled information.
-        br
         br
         | On FOLD, authors are given more control over the context readers see. When a
         | reader unfolds a story, he or she is presented with a horizontal bar of context
@@ -33,28 +39,56 @@ div(ng-controller="ProjController as projCtrl")
         | interface that abstracts away the APIs of each media service.
         br
         br
-        | FOLD is an open-source project on 
-        a(href="https://github.com/readFOLD/FOLD").color-pop github
-        |  and is hosted at 
-        a(href="https://readfold.com/").color-pop readfold.com
-        |.
     div(ng-show="project.name == 'buyforbaby'")
       .proj-info BuyForBaby is a baby registry that provides parents the ability to customize, organize and better account for items on their wish lists. 
         br
         br
-        | The final web application is a culmination of a semester of learning and applying the design process through ideation, user research to define user groups and goals, storyboarding, and iterations of prototyping and testing. BuyForBaby was developed in collaboration with teammates Aaron Hammond, Priya Kalluri and Lia Coleman for the User Interface Design and Implementation class at MIT.
+        | The final web application is a culmination of a semester of learning and applying the design process. This process involved 
+        span.pop ideation, user research to specify target groups and goals, storyboarding, wireframing, paper and computer prototyping, and testing.
+        br
+        br
+        | BuyForBaby was developed in collaboration with teammates Aaron Hammond, Priya Kalluri and Lia Coleman for the User Interface Design and Implementation class at MIT.
         br
         br
         span.sub-title Background
         br
         | After observing the fragmented and impersonal process of picking a gift for my sister’s first baby shower, I wondered how unnecessarily stressful it must be for parents to account for all the things they would need to care for their newborn. By studying more cases of registry use on both the gifter’s end and the parents’ (“giftee’s”) end, our team highlighted issues with the current landscape of registries and identified how a more specific and unifying interface layer could improve the shopping experience for both user groups.
     div(ng-show="project.name == 'metalwork'")
-      .proj-info {{project.intro}}
+      .proj-info The Forge at MIT gives me a chance to experiment and design with more tangible and physical media: glass, copper, and steel. 
+        br
+        br
+        | Here's some pieces that I've made so far. Pictured clockwise, a champlev&eacute; enameled daffodil, 
+        | blue and seagreen transparent enamel layered over aluminum foil, 
+        | an enameled owl, and a blacksmithed plant hanger with leaf detail.
+        br
+        br
+        .column
+          .box-wrapper
+            .project.box.metalwork(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/metalwork/homepage_small2.png')")
+          .box-wrapper
+            .project.box.metalwork(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/metalwork/planthanger.jpg')")
+        .column
+          .box-wrapper
+            .project.box.metalwork(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/metalwork/al_green.jpg')")
+          .box-wrapper
+            .project.box.metalwork(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/metalwork/owl_purple.jpg')")
+        br
+        | I'm currently working on a Calder mobile that will use a few of those owls pictured above. The project will pick back up once I'm back in Cambridge in the fall, so stay tuned!
     div(ng-show="project.name == 'nomad'")
-      .proj-info Nomad placed 3rd in MIT’s month-long web programming competition, 6.470, and won special recognition for best fulfilling this year’s theme of “Around The World”.
+      .proj-info Nomad is a low-commitment travel blog that lets you explore a new place and find
+        | travelers in your area who share similar interests. 
+        | Nomad placed 3rd in 6.470, MIT’s annual web programming competition. 
+        | It also won special recognition for best fulfilling this year’s theme of “Around The World”.
         br
         br
-        | Nomad is a low-commitment travel blog that lets you explore a new place and find travelers in your area who share similar interests. This single page application was built using AngularJS and Express/Node.js in collaboration with Kamilla Tekiela and Dang Pham.
+        | My main contributions revolved around the location-based features of the app.
+        | This included the integration of Google Maps API and developing features that allow users to search and filter for travellers in a given area.
+        | This app was developed in collaboration with Kamilla Tekiela and Dang Pham and was inspired by our study abroad experiences in Spain and Israel.
+        br
+        br
+        span.sub-title Technologies
+        br
+        span.pop AngularJS, Node.js, Express, MongoDB, HTML/CSS  
         br
         br
         | You can quickly set up an account and check it out on 
@@ -63,11 +97,29 @@ div(ng-controller="ProjController as projCtrl")
         a(href="https://youtu.be/jF-Od0DgOw0").color-pop webcast 
         | to get an idea of the site’s functionality.
     div(ng-show="project.name == 'hkn'")
-      .proj-info This year I’ll be serving as a webmaster of the Eta Kappa Nu chapter at MIT alongside Kate Yu. Eta Kappa Nu (also known as HKN), is the honor society of IEEE.
-        | At MIT, HKN members work to improve the EECS department by developing and maintaining important resources used by the department. 
+      .proj-info This year I’ll be serving as a webmaster of the Eta Kappa Nu chapter at MIT with co-chair Kate Yu. Eta Kappa Nu (also known as HKN), is the honor society of IEEE.
+        | At MIT, HKN members work to improve the EECS department by developing and improving resources used by EECS students. 
         br
         br
-        | In my capacity as webmaster, I am responsible for maintaining the many online resources used by the EECS department as well as improving these resources to better serve EECS students.
+        | In my capacity as webmaster, I'll be developing the many online resources used by the department and its students.
     div(ng-show="project.name == 'anisotropic'")
-      .proj-info {{project.intro}}
-    a(href="/").action-link <br>Back to projects
+      .proj-info Anisotropic was an indoor installation set up during Steer Roast, an art, music, and people watching event at MIT. I designed this project during the Spring of 2014 for 21M.734, Lighting Design.
+        br
+        br
+        |  My goal with Anisotropic was two fold
+        ol
+          li On an emotional level, to create an atmosphere of calm and peace to juxtapose the craze that often accompanied a dorm-wide event like Steer Roast
+          li On a technical level, to explore and highlight the intricate nature of light and its interaction with anisotropic material
+        br
+        | The semester long design process led to the complete transformation of a 100 sq ft dorm lounge.
+        br
+        br
+        | The room was surround with black stage curtains
+        | that masked the light and sounds of the outdoor courtyard. 
+        | Light from a 77 lumen LED, and a PAR38 Spotlight fitted with a 150W Halogen bulb were used to light the room.
+        | Wire mesh, iridescent cellophane, and a small fan were used to guide the light to the ceiling of the room
+        br
+        br
+        .proj-pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/anisotropic/port1_small.jpg')")
+        .proj-pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/anisotropic/port3_small.jpg')")
+    a(scroll-on-click href="/").action-link <br>Back to projects

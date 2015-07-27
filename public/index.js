@@ -109,7 +109,7 @@ function scrollOnClick() {
     restrict: 'A',
     link: function(scope, $el) {
       $el.on('click', function() {
-        $("body").animate({scrollTop: 0}, "slow");
+        $("body").animate({scrollTop: 290}, "slow");
       });
     }
   }

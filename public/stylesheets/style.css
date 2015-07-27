@@ -23,7 +23,7 @@ time, mark, audio, video {
 html {
   line-height: 1; }
 
-ol, ul {
+ul {
   list-style: none; }
 
 table {
@@ -114,7 +114,6 @@ body, html {
 }
 
 .blurb {
-  font-family: "lato"; 
   line-height: 1.6em;
 }
 
@@ -131,9 +130,14 @@ body, html {
 /*************/
 
 /* grid-wrapper: 1 to 1.6*/
-.project {
+.project, .proj-pic{
   background-repeat: no-repeat;
   background-position: 50% 0%;
+}
+
+.proj-pic.box {
+  height: 450px;
+  position: relative;
 }
 
 .project.box {
@@ -143,6 +147,9 @@ body, html {
 }
 .project:not(.hkn):not(.metalwork) {
   background-size: cover;
+}
+.metalwork {
+  background-size: contain;
 }
 
 .project.hkn {
@@ -203,6 +210,9 @@ body, html {
   text-transform: uppercase;
   line-height: 2.3em;
 }
+ol {
+  margin-left: 30px;
+}
 /*************/
 /* about     */
 /*************/
@@ -241,6 +251,9 @@ body, html {
 .up-pop {
   line-height: 1.8em;
   color: #D48300;
+}
+.pop {
+  font-weight: 500;
 }
 
 .courses.box {
@@ -423,7 +436,7 @@ footer {
     margin: 0 0 0 64px;
   }
   
-  .project.box {
+  .project.box, .proj-pic.box {
     margin: 0 auto;
     width: 70vw;
   }
@@ -441,7 +454,7 @@ footer {
   }
 }
 @media (max-width: 460px) {
-  .project.box {
+  .project.box, .proj-pic.box {
     width: 100%;
   }
 
