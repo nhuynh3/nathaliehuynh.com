@@ -251,7 +251,11 @@ ol {
   font-size: 32px;
   color: #D48300;
   text-align: center;
-  line-height: 1.2em;
+  padding-bottom: 6px;
+}
+
+p.about {
+  padding-bottom: 16px;
 }
 .color-pop {
   color: #D48300;
@@ -480,7 +484,16 @@ footer {
     width: 200px;
   }
 
+  .about > .grid > .column {
+    padding-left: 0;
+    padding-right 0;
+  }
+  .courses.column {
+    padding: 5px;
+  }
 
-
+  li.course {
+    padding-left: 20px;
+  }
 }
 
