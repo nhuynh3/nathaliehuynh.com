@@ -198,17 +198,25 @@ body, html {
 }
 .proj {
   position: relative;
-  line-height: 3em;
+  margin: 15px;
+  font-size: 30px;
   top: -20px;
   text-align: center;
 }
 
 .proj-info {
-  line-height: 1.6em;
+  line-height: 1.3em;
+  max-width: 30em;
+  margin: auto;
+  font-size: 18px;
+}
+.proj-info > p {
+  padding-bottom: 1.3em;
 }
 .proj-info > .sub-title {
   text-transform: uppercase;
-  line-height: 2.3em;
+  font-size: 19px;
+  padding-bottom: 0;
 }
 ol {
   margin-left: 30px;
