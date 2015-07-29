@@ -25,9 +25,25 @@ div(ng-controller="ProjController as projCtrl")
           | intersecting the vertical scroll of cards which contains the main narrative.
           | Each vertical narrative card can be framed by horizontal “context” cards containing
           | videos, audio tracks, maps, gifs, data visualizations, pictures, tweets, or text.
-          | Adding and discovering these multimedia context cards is made easy through the FOLD
+        p Adding and discovering these multimedia context cards is made easy through the FOLD
           | authoring platform, which provides a consistent search, preview and selection
           | interface that abstracts away the APIs of each media service.
+        br
+
+        .pic-wrapper
+          .pic-title
+            .banner-text.caption The front page of FOLD, where you'll find an eclectic sampling of stories.
+          .pic.box.wide(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/fold_home.png')")
+        .pic-wrapper
+          .pic-title
+            .banner-text.caption An example of an "unfolded" FOLD. 
+          .pic.box.wide(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/vimeo.png')")
+        .pic-wrapper
+          .pic-title
+            .banner-text.caption Authors can search for and embed multimedia content into their stories using FOLD's authoring platform.
+          .pic.box.wide(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/search.png')")
+    
+
     div(ng-show="project.name == 'buyforbaby'")
       .proj-info 
         p BuyForBaby is a baby registry that provides parents the ability to customize, organize and better account for items on their wish lists. 
@@ -36,6 +52,8 @@ div(ng-controller="ProjController as projCtrl")
         p BuyForBaby was developed in collaboration with teammates Aaron Hammond, Priya Kalluri and Lia Coleman for the User Interface Design and Implementation class at MIT.
         p.sub-title Background
         p After observing the fragmented and impersonal process of picking a gift for my sister’s first baby shower, I wondered how unnecessarily stressful it must be for parents to account for all the things they would need to care for their newborn. By studying more cases of registry use on both the gifter’s end and the parents’ (“giftee’s”) end, our team highlighted issues with the current landscape of registries and identified how a more specific and unifying interface layer could improve the shopping experience for both user groups.
+    
+
     div(ng-show="project.name == 'metalwork'")
       .proj-info 
         p Spending time at The Metals Lab at MIT gives me a chance to experiment and
@@ -59,9 +77,11 @@ div(ng-controller="ProjController as projCtrl")
           .box-wrapper
             .project.box.metalwork(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/metalwork/owl_purple.jpg')")
         p I'm currently working on a Calder mobile that will use a few of those owls pictured above. The project will pick back up once I'm back in Cambridge in the fall, so stay tuned!
+    
+
     div(ng-show="project.name == 'nomad'")
       .proj-info 
-        p Nomad is a low-commitment travel blog that lets you explore a new place and find
+        p Nomad is a low-commitment travel blog that helps you explore a new place by finding
           | travelers in your area who share similar interests. 
           | Nomad placed 3rd in 6.470, MIT’s annual web programming competition. 
           | It also won special recognition for best fulfilling this year’s theme of “Around The World”.
@@ -75,11 +95,15 @@ div(ng-controller="ProjController as projCtrl")
           | or watch this short 
           a(href="https://youtu.be/jF-Od0DgOw0").color-pop webcast 
           | to get an idea of the site’s functionality.
+    
+
     div(ng-show="project.name == 'hkn'")
       .proj-info
         p This year I’ll be serving as a webmaster of the Eta Kappa Nu chapter at MIT with co-chair Kate Yu. Eta Kappa Nu (also known as HKN), is the honor society of IEEE.
           | At MIT, HKN members work to improve the EECS department by developing and improving resources used by EECS students. 
         p In my capacity as webmaster, I'll be developing the many online resources used by the department and its students.
+    
+
     div(ng-show="project.name == 'anisotropic'")
       .proj-info 
         p Anisotropic is an indoor installation set up during Steer Roast, an art, music, and people watching event at MIT. I designed this project during the Spring of 2014 for 21M.734, Lighting Design.
@@ -92,6 +116,8 @@ div(ng-controller="ProjController as projCtrl")
           | that masked the light and sounds of the outdoor courtyard. 
         p Light from a 77 lumen LED, and a PAR38 Spotlight fitted with a 150W Halogen bulb were used to light the room.
           | Wire mesh, iridescent cellophane, and a small fan were used to guide the light to the ceiling of the room
-        .proj-pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/anisotropic/port1_small.jpg')")
-        .proj-pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/anisotropic/port3_small.jpg')")
+        .pic-wrapper
+          .pic.box.anisotropic(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/anisotropic/port1_small.jpg')")
+        .pic-wrapper
+          .pic.box.anisotropic(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/anisotropic/port3_small.jpg')")
     a(scroll-on-click href="/").action-link <br>Back to projects
