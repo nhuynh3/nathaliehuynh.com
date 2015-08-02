@@ -207,7 +207,7 @@ body, html {
   line-height: 1.3em;
   max-width: 30em;
   margin: auto;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .proj-info > p {
@@ -348,7 +348,7 @@ div.nav-bar {
   width: 100%;
   background-color: white;
   z-index: 2;
-  padding: 10px 0 0;
+  padding: 20px 0 0;
 }
 
 div.nav {
@@ -392,7 +392,7 @@ div.content {
   padding: 2px 20px 0;
 }
 .contact {
-  margin: 0 auto;
+  margin: 0 auto 10px;
   line-height: 1.6em;
   font-size: 10pt;
 }
