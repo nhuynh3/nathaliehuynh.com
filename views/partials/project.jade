@@ -4,68 +4,144 @@ div(ng-controller="ProjController as projCtrl")
 
 
     div(ng-show="project.name == 'fold'")
-      .proj-info 
-        p FOLD, a project out of MIT Media Lab’s Center for
-          | Civic Media is a modular, multimedia CMS that enables storytellers
-          | to better guide their readers through complex stories. 
-        p My contribution enabled authors to search for and integrate multimedia
-          | content into FOLD. I also built the interface through which users
-          | created, customized, and discovered other FOLD profiles.
-          | This work was done in collaboration with Alexis Hope 
-          | (lead designer and HCI researcher), Joe Goldbeck
-          | (lead developer), and Kevin Hu. 
-        p.sub-title Technologies
-        p.pop Meteor.js, HTML/LESS, jQuery, MongoDB
-        p FOLD is an open-source project on 
-          a(href="https://github.com/readFOLD/FOLD").color-pop github
-          |  and is hosted at 
-          a(href="https://readfold.com/").color-pop readfold.com
-          |.
-        p.sub-title Background
-        p On FOLD, authors are given more control over the context readers see. When a
-          | reader unfolds a story, he or she is presented with a horizontal bar of context
-          | intersecting the vertical scroll of cards which contains the main narrative.
-          | Each vertical narrative card can be framed by horizontal “context” cards containing
-          | videos, audio tracks, maps, gifs, data visualizations, pictures, tweets, or text.
-        p Adding and discovering these multimedia context cards is made easy through the FOLD
-          | authoring platform, which provides a consistent search, preview and selection
-          | interface that abstracts away the APIs of each media service.
+      .grid
+        .column
+          .box.proj-info 
+            p.sub-title Background
+            p FOLD, a project out of MIT Media Lab’s Center for
+              | Civic Media is a modular, multimedia CMS that enables storytellers
+              | to better guide their readers through complex stories. 
+            p.sub-title contribution
+            p My contribution enabled authors to search for and integrate multimedia
+              | content into FOLD. I also built the interface through which users
+              | created, customized, and discovered other FOLD profiles.
+              | This work was done in collaboration with Alexis Hope 
+              | (lead designer and HCI researcher), Joe Goldbeck
+              | (lead developer), and Kevin Hu. 
+            p.sub-title Technologies
+            p.pop Meteor.js, HTML/LESS, jQuery, MongoDB
+        .column
+          .box.proj-info 
+            p.sub-title More info
+            p On FOLD, authors are given more control over the context readers see. When a
+              | reader unfolds a story, he or she is presented with a horizontal bar of context
+              | intersecting the vertical scroll of cards which contains the main narrative.
+              | Each vertical narrative card can be framed by horizontal “context” cards containing
+              | videos, audio tracks, maps, gifs, data visualizations, pictures, tweets, or text.
+            p Adding and discovering these multimedia context cards is made easy through the FOLD
+              | authoring platform, which provides a consistent search, preview and selection
+              | interface that abstracts away the APIs of each media service.
+            p FOLD is an open-source project on 
+              a(href="https://github.com/readFOLD/FOLD").color-pop github
+              |  and is hosted at 
+              a(href="https://readfold.com/").color-pop readfold.com
+              |.
         br
       .pic-wrapper
         .pic-title
           .banner-text.caption An example of an "unfolded" story. 
-        .pic.box.wide(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/vimeo.png')")
+        .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/vimeo.png')")
       .pic-wrapper
         .pic-title
           .banner-text.caption Authors can search for and embed multimedia content into their stories using FOLD's authoring platform.
-        .pic.box.wide(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/search.png')")
+        .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/search.png')")
       .pic-wrapper
         .pic-title
           .banner-text.caption The front page of FOLD, where you'll find an eclectic sampling of stories.
-        .pic.box.wide(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/fold_home.png')")
+        .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/fold_home.png')")
 
     div(ng-show="project.name == 'buyforbaby'")
-      .proj-info 
-        p BuyForBaby is a baby registry that provides parents the ability to customize, organize and better account for items on their wish lists. 
-        p The final web application is a culmination of a semester of learning and applying the design process. This process involved 
-          span.pop ideation, user research to specify target groups and goals, storyboarding, wireframing, paper and computer prototyping, and testing.
-        p BuyForBaby was developed in collaboration with teammates Aaron Hammond, Priya Kalluri and Lia Coleman for the User Interface Design and Implementation class at MIT.
-        p.sub-title Background
-        p After observing the fragmented and impersonal process of picking a gift for my sister’s first baby shower, I wondered how unnecessarily stressful it must be for parents to account for all the things they would need to care for their newborn. By studying more cases of registry use on both the gifter’s end and the parents’ (“giftee’s”) end, our team highlighted issues with the current landscape of registries and identified how a more specific and unifying interface layer could improve the shopping experience for both user groups.
-    
+      .grid
+        .column
+          .box.proj-info 
+            p.sub-title Background
+            p BuyForBaby is a baby registry that provides parents the ability 
+              | to customize, organize and better account for items on their wish lists. 
+            p The final web application is a culmination of a semester of learning and 
+              | applying the design process. This process involved 
+              span.pop ideation, user research to specify target groups and goals, 
+                | storyboarding, wireframing, paper and computer prototyping, and testing.
+            p BuyForBaby was developed in collaboration with teammates Aaron Hammond, 
+              | Priya Kalluri and Lia Coleman for the User Interface Design and Implementation class at MIT.
+            
+            p.sub-title Prototypes
+            p After interviewing our target user groups the team identified design goals and developed prototypes to address them.
+            p Following rounds of paper prototyping, testing, and iteration, the group developed a high fidelty computer prototype. 
+        .column
+          .box.proj-info 
+            p.sub-title Process
+            p After observing the fragmented and impersonal process of picking a gift for my 
+              | sister’s first baby shower, I wondered how unnecessarily stressful it must be 
+              | for parents to account for all the things they would need to care for their 
+              | newborn. 
+            p By studying more cases of registry use on both the gifter’s end and 
+              | the parents’ (“giftee’s”) end, our team highlighted issues with the current 
+              | landscape of registries and identified how a more specific and unifying interface 
+              | layer could improve the shopping experience for both user groups.
+      .grid
+        .column
+          .box.proj-info 
+            p.sub-title.color-pop Early Prototype
+      .grid
+        .column
+          .pic-wrapper
+            .pic-title
+              .banner-text.caption Landing page view
+            .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/proto_first.png')")
+        .column  
+          .pic-wrapper
+            .pic-title
+              .banner-text.caption Parents' wishlist creation form
+            .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/proto_second.png')")
+      .pic-wrapper
+        .pic-title
+          .banner-text.caption Parents' wishlist curation view
+        .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/proto_third.png')")
+      .grid
+        .column
+          .pic-wrapper
+            .pic-title
+              .banner-text.caption Detailed state during wishlist curation
+            .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/proto_fourth.png')")
+        .column  
+          .pic-wrapper
+            .pic-title
+              .banner-text.caption Parents' final wishlist
+            .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/proto_fifth.png')")
+      .grid
+        .column
+          .box.proj-info 
+            p.sub-title.color-pop Final Prototype
+      .pic-wrapper.bfb-landing
+        .pic.box.no-hover(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/bfb-landing.png')")
+      .pic-wrapper
+        .pic-title
+          .banner-text.caption Parents' wishlist curation view
+        .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/bfb_giftee_small.png')")
+      .pic-wrapper
+        .pic-title
+          .banner-text.caption Parents' final wishlist
+        .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/bfb_gifter_small.png')")
 
     div(ng-show="project.name == 'metalwork'")
-      .proj-info 
-        p Spending time at The Metals Lab at MIT gives me a chance to experiment and
-          | design with more tangible and physical media: glass, copper, and steel. 
-        p I love working in this setting because it is a chance for my work to be
-          | at the whim of processes that I have much less control over. 
-          | Each material and piece transforms itself through a unique process each time.
-          | The challenge in designing each piece lies in learning and predicting the
-          | effects of each process as it stresses and changes the material.
-        p Here are a sampling of pieces that I've made. Pictured below, a champlev&eacute; dandelion, 
-          | a blacksmithed plant hanger with leaf detail, 
-          | blue and green enamel over aluminum foil, and an owl.
+      .grid
+        .column
+          .box.proj-info
+            p Spending time at The Metals Lab at MIT gives me a chance to experiment and
+              | design with more tangible and physical media: glass, copper, and steel. 
+            p I love working in this setting because it is a chance for my work to be
+              | at the whim of processes that I have much less control over. 
+              | Each material and piece transforms itself through a unique process each time.
+              | The challenge in designing each piece lies in learning and predicting the
+              | effects of each process as it stresses and changes the material.
+        .column
+          .box.proj-info
+            p Pictured are a sampling of pieces that I've made: a champlev&eacute; dandelion, 
+              | a blacksmithed plant hanger with leaf detail, 
+              | blue and green enamel over aluminum foil, and an owl.
+            p I'm currently working on a Calder mobile that will use a few of those owls pictured above.
+              | The project will pick back up once I'm back in Cambridge in the fall, so stay tuned!
+      .grid  
         .column
           .box-wrapper
             .project.box.metalwork(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/metalwork/homepage_small2.png')")
@@ -76,28 +152,34 @@ div(ng-controller="ProjController as projCtrl")
             .project.box.metalwork(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/metalwork/al_green.jpg')")
           .box-wrapper
             .project.box.metalwork(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/metalwork/owl_purple.jpg')")
-        p I'm currently working on a Calder mobile that will use a few of those owls pictured above. The project will pick back up once I'm back in Cambridge in the fall, so stay tuned!
+          
     
 
     div(ng-show="project.name == 'nomad'")
-      .proj-info 
-        p Nomad is a low-commitment travel blog that helps you explore new places by finding other travelers in the area.
-          | Nomad placed 3rd in 6.470, MIT’s annual web programming competition. 
-          | It also won special recognition for best fulfilling this year’s theme of “Around The World”.
-        p My main contributions revolved around the location-based features of the app.
-          | This included the integration of Google Maps API and developing features that allow users to search and filter for travelers in a given area.
-          | Nomad was developed in collaboration with Kamilla Tekiela and Dang Pham and was inspired by our study abroad experiences in Spain and Israel.
-        p.sub-title Technologies
-        p.pop AngularJS, Node.js, Express, MongoDB, HTML/CSS  
-        br
-        p If you are interested in seeing more, you can quickly set up an account and check out the app on 
-          a(href="//nomadhub.herokuapp.com").color-pop nomadhub.herokuapp.com 
-          | or watch the following webcast to get an idea of the site’s functionality.
+      .grid
+        .column
+          .box.proj-info 
+            p.sub-title Background
+            p Nomad is a low-commitment travel blog that helps you explore new places by finding other travelers in the area.
+            p.sub-title contribution
+            p My main contributions revolved around the location-based features of the app.
+              | This included the integration of Google Maps API and developing features that allow users to search and filter for travelers in a given area.
+              | Nomad was developed in collaboration with Kamilla Tekiela and Dang Pham and was inspired by our study abroad experiences in Spain and Israel.
+            p.sub-title Technologies
+            p.pop AngularJS, Node.js, Express, MongoDB, HTML/CSS  
+        .column
+          .box.proj-info 
+            p.sub-title More info
+            p Nomad placed 3rd in 6.470, MIT’s annual web programming competition. 
+              | It also won special recognition for best fulfilling this year’s theme of “Around The World”.
+            p If you are interested in seeing more, you can quickly set up an account and check out the app on 
+              a(href="//nomadhub.herokuapp.com").color-pop nomadhub.herokuapp.com 
+              | or watch the following webcast to get an idea of the site’s functionality.
       .pic-wrapper
         .pic-title
           .banner-text.caption Users can curate travel profiles of their own and find other nomads in their area.
-        .pic.box.wide(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/nomad/nomad_boston.png')")  
-      iframe(width="100%" height="380" src="https://www.youtube.com/embed/jF-Od0DgOw0?rel=0&amp;controls=0" frameborder="0" allowfullscreen)
+        .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/nomad/nomad_boston.png')")  
+      iframe(width="100%" height="575" src="https://www.youtube.com/embed/jF-Od0DgOw0?rel=0&amp;controls=0" frameborder="0" allowfullscreen)
     div(ng-show="project.name == 'hkn'")
       .proj-info
         p This year I’ll be serving as a webmaster of the Eta Kappa Nu chapter at MIT with co-chair Kate Yu. Eta Kappa Nu (also known as HKN), is the honor society of IEEE.
@@ -106,19 +188,25 @@ div(ng-controller="ProjController as projCtrl")
     
 
     div(ng-show="project.name == 'anisotropic'")
-      .proj-info 
-        p Anisotropic is an indoor installation set up during Steer Roast, an art, music, and people watching event at MIT. I designed this project during the Spring of 2014 for 21M.734, Lighting Design.
-        p  My goal with Anisotropic was two fold
-          ol
-            li On an emotional level, I wanted to design and create an atmosphere of calm and peace to juxtapose the craze that often accompanied a dorm-wide event like Steer Roast
-            li On a technical level, I hoped to explore and highlight the intricate nature of light and its interaction with anisotropic material
-        p The semester long design process led to the complete transformation of a 100 sq ft dorm lounge.
-          | The room was surround with black stage curtains
-          | that masked the light and sounds of the outdoor courtyard. 
-        p Light from a 77 lumen LED, and a PAR38 Spotlight fitted with a 150W Halogen bulb were used to light the room.
-          | Wire mesh, iridescent cellophane, and a small fan were used to guide the light to the ceiling of the room
+      .grid
+        .column
+          .box.proj-info 
+            p.sub-title Background
+            p Anisotropic is an indoor installation set up during Steer Roast, an art, music, and people watching event at MIT. I designed this project during the Spring of 2014 for 21M.734, Lighting Design.
+            p  My goal with Anisotropic was two fold
+              ol
+                li On an emotional level, I wanted to design and create an atmosphere of calm and peace to juxtapose the craze that often accompanied a dorm-wide event like Steer Roast
+                li On a technical level, I hoped to explore and highlight the intricate nature of light and its interaction with anisotropic material
+        .column
+          .box.proj-info 
+            p.sub-title More info
+            p This semester long design process led to the complete transformation of a 100 sq ft dorm lounge.
+              | The room was surround with black stage curtains
+              | that masked the light and sounds of the outdoor courtyard. 
+            p Light from a 77 lumen LED, and a PAR38 Spotlight fitted with a 150W Halogen bulb were used to light the room.
+              | Wire mesh, iridescent cellophane, and a small fan were used to guide the light to the ceiling of the room
       .pic-wrapper
-        .pic.box.anisotropic(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/anisotropic/port3_small.jpg')")
+        .pic.box.no-hover(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/anisotropic/port3_small.jpg')")
       .pic-wrapper
-        .pic.box.anisotropic(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/anisotropic/port1_small.jpg')")
+        .pic.box.no-hover(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/anisotropic/port1_small.jpg')")
     a(scroll-on-click href="/").action-link <br>Back to projects
