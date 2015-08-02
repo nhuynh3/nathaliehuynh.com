@@ -458,7 +458,9 @@ footer {
   div.content {
     top: 40px;
   }
-
+  div.content.menu-open {
+    top: 70px;
+  }
   .column {
     width: 100%;
     padding: 20px;

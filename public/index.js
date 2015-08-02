@@ -123,6 +123,7 @@ function openMenu() {
     link: function(scope, $el) {
       $(".nav-bar.mobile").on('click', function() {
         $(".nav-bar").addClass("open");
+        $(".content").addClass("menu-open");
       });
     }
   }
@@ -134,6 +135,7 @@ function closeMenu() {
     link: function(scope, $el) {
       $(".nav-bar.exit").on('click', function() {
         $(".nav-bar").removeClass("open");
+        $(".content").removeClass("menu-open");
       });
     }
   }
