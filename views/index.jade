@@ -3,7 +3,6 @@ extends layout
 block content
     div.container
       div(ng-controller="HomeController as homeCtrl")
-
         div.nav-bar.desktop
           div.nav
             a(scroll-on-click href="/about" class="cool-pop" ng-class="{'action-link': isNotActive('/about')}").nav-link about me

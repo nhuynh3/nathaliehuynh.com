@@ -138,8 +138,13 @@ body, html {
 
 .project.box, .pic.box {
   height: 0;
-  padding-bottom: 66.67%;
   position: relative;
+}
+.project.box {
+  padding-bottom: 66.67%;
+}
+.pic.box {
+  padding-bottom: 56.25%;
 }
 .project:not(.hkn):not(.metalwork) {
   background-size: cover;
@@ -217,12 +222,16 @@ body, html {
 }
 
 .pic.box {
+  background-size: cover;
+}
+
+.pic.box.contain {
   background-size: contain;
 }
 
 .vid-wrapper {
   position: relative;
-  padding-bottom: 66.67%;
+  padding-bottom: 56.25%;
   padding-top: 25px;
   height: 0;
 }
@@ -428,7 +437,7 @@ footer {
 }
 .horizontal-line {
   border: none;
-  background-color: #3B4745;
+  background-color: #c9c6c2;
   height: 1px;
 }
 
@@ -532,6 +541,17 @@ footer {
   .proj-info {
     padding-right: 0px;
   }
+
+.box-wrapper > a > .project-title {
+  opacity: 1;
+}
+.box-wrapper > a > .project {
+  opacity: 0.6;
+}
+
+.pic-wrapper > .pic-title {
+  opacity: 0;
+}
 
   footer {
     text-align: center;

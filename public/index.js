@@ -45,7 +45,7 @@ var PROJECTS = {
 /* Angular App  */
 /****************/
 
-var nApp = angular.module("nathaliesApp",['ngRoute', 'ngTouch']);
+var nApp = angular.module("nathaliesApp",['ngRoute']);
 
 nApp.controller("HomeController", HomeController);
 nApp.controller("ProjectsController", ProjectsController);
