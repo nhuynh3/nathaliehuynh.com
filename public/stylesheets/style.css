@@ -44,6 +44,7 @@ q, blockquote {
 
 a {
   color: inherit; 
+  cursor: pointer;
   text-decoration: inherit; 
 }
 a img {
@@ -250,7 +251,6 @@ ol {
 }
 .about-blurb-title {
   font-size: 32px;
-  color: #D48300;
   text-align: center;
   padding-bottom: 6px;
 }
@@ -258,12 +258,16 @@ ol {
 p.about {
   padding-bottom: 16px;
 }
-.color-pop {
-  color: #D48300;
+.cool-pop {
+  color: #76a661;
+}
+.warm-pop {
+  /*color: #A66176;*/
+  color: #76a661;
 }
 .up-pop {
   line-height: 1.8em;
-  color: #D48300;
+  color: #76a661;
 }
 .pop {
   font-weight: 500;
@@ -290,7 +294,7 @@ li.hidden {
 /*************/
 .banner {
   width: 100%;
-  height: 283px;
+  height: 362px;
   max-width: 900px;
   margin: 0 auto;
   padding: 10px 20px;
@@ -299,9 +303,8 @@ li.hidden {
 .banner-image {
   height: 100%;
   background-size: cover;
-  background-image: url("http://assets.nathaliehuynh.com/profile-assets/about.jpg");
+  background-image: url("http://assets.nathaliehuynh.com/profile-assets/prof_charles.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 52%;
   opacity: 0.9;
 }
 
@@ -322,7 +325,7 @@ li.hidden {
   width: 9px;
 }
 .banner-text.name {
-  margin: 32px 0 0 32px;
+  margin: 230px 0 0 32px;
 }
 .banner-text.blurb {
   font-size: 125%;
@@ -415,6 +418,10 @@ footer {
   }
   .proj-info {
     padding-right: 10px;
+  }
+
+  .banner-text.name {
+    margin: 248px 0 0 32px;
   }
 }
 @media (max-width: 600px) {
