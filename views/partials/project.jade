@@ -1,9 +1,9 @@
 div(ng-controller="ProjController as projCtrl")
   .grid-wrapper
-    .proj.cool-pop {{project.title}}
+    .proj-title.cool-pop {{project.title}}
 
 
-    div(ng-show="project.name == 'fold'")
+    div(ng-show="project.name == 'fold'").proj
       .grid
         .column
           .box.proj-info 
@@ -50,7 +50,7 @@ div(ng-controller="ProjController as projCtrl")
           .banner-text.caption The front page of FOLD, where you'll find an eclectic sampling of stories.
         .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/fold_home.png')")
 
-    div(ng-show="project.name == 'buyforbaby'")
+    div(ng-show="project.name == 'buyforbaby'").proj
       .grid
         .column
           .box.proj-info 
@@ -123,7 +123,7 @@ div(ng-controller="ProjController as projCtrl")
           .banner-text.caption Parents' final wishlist
         .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/bfb_gifter_small.png')")
 
-    div(ng-show="project.name == 'metalwork'")
+    div(ng-show="project.name == 'metalwork'").proj
       .grid
         .column
           .box.proj-info
@@ -155,7 +155,7 @@ div(ng-controller="ProjController as projCtrl")
           
     
 
-    div(ng-show="project.name == 'nomad'")
+    div(ng-show="project.name == 'nomad'").proj
       .grid
         .column
           .box.proj-info 
@@ -180,14 +180,14 @@ div(ng-controller="ProjController as projCtrl")
           .banner-text.caption Users can curate travel profiles of their own and find other nomads in their area.
         .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/nomad/nomad_boston.png')")  
       iframe(width="100%" height="575" src="https://www.youtube.com/embed/jF-Od0DgOw0?rel=0&amp;controls=0" frameborder="0" allowfullscreen)
-    div(ng-show="project.name == 'hkn'")
+    div(ng-show="project.name == 'hkn'").proj
       .proj-info
         p This year I’ll be serving as a webmaster of the Eta Kappa Nu chapter at MIT with co-chair Kate Yu. Eta Kappa Nu (also known as HKN), is the honor society of IEEE.
           | At MIT, HKN members work to improve the EECS department by developing and improving resources used by EECS students. 
         p In my capacity as webmaster, I'll be developing the many online resources used by the department and its students.
     
 
-    div(ng-show="project.name == 'anisotropic'")
+    div(ng-show="project.name == 'anisotropic'").proj
       .grid
         .column
           .box.proj-info 

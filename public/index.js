@@ -45,12 +45,14 @@ var PROJECTS = {
 /* Angular App  */
 /****************/
 
-var nApp = angular.module("nathaliesApp",['ngRoute']);
+var nApp = angular.module("nathaliesApp",['ngRoute', 'ngTouch']);
 
 nApp.controller("HomeController", HomeController);
 nApp.controller("ProjectsController", ProjectsController);
 nApp.controller("ProjController", ProjController);
 nApp.directive("scrollOnClick", scrollOnClick);
+nApp.directive("openMenu", openMenu);
+nApp.directive("closeMenu", closeMenu);
 
 nApp.config(function($routeProvider, $locationProvider) {
     $routeProvider
@@ -109,7 +111,29 @@ function scrollOnClick() {
     restrict: 'A',
     link: function(scope, $el) {
       $el.on('click', function() {
-        $("body").animate({scrollTop: 380}, "slow");
+        $("body").animate({scrollTop: 380}, "slow", "easeOutQuad");
+      });
+    }
+  }
+}
+
+function openMenu() {
+  return {
+    restrict: 'A',
+    link: function(scope, $el) {
+      $(".nav-bar.mobile").on('click', function() {
+        $(".nav-bar").addClass("open");
+      });
+    }
+  }
+}
+
+function closeMenu() {
+  return {
+    restrict: 'A',
+    link: function(scope, $el) {
+      $(".nav-bar.exit").on('click', function() {
+        $(".nav-bar").removeClass("open");
       });
     }
   }
