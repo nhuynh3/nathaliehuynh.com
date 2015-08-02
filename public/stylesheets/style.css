@@ -221,6 +221,10 @@ body, html {
   padding-bottom: 54px;
 }
 
+.pic.box.bfb-landing {
+  padding-bottom: 80%;
+}
+
 .pic.box {
   background-size: cover;
 }
