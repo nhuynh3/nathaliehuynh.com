@@ -135,10 +135,6 @@ body, html {
   background-position: 50% 0%;
 }
 
-.pic.box {
-  background-size: contain;
-}
-
 .project.box, .pic.box {
   height: 0;
   padding-bottom: 66.67%;
@@ -146,9 +142,6 @@ body, html {
 }
 .project:not(.hkn):not(.metalwork) {
   background-size: cover;
-}
-.metalwork {
-  background-size: contain;
 }
 
 .project.hkn {
@@ -220,6 +213,10 @@ body, html {
 
 .pic-wrapper {
   padding-bottom: 54px;
+}
+
+.pic.box {
+  background-size: contain;
 }
 
 ol {
