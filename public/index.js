@@ -50,23 +50,22 @@ var nApp = angular.module("nathaliesApp",['ngRoute']);
 nApp.controller("HomeController", HomeController);
 nApp.controller("ProjectsController", ProjectsController);
 nApp.controller("ProjController", ProjController);
-nApp.directive("scrollOnClick", scrollOnClick);
 nApp.directive("openMenu", openMenu);
 nApp.directive("closeMenu", closeMenu);
 
 nApp.config(function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: "partials/projects",
-        controller: 'ProjectsController'
+        templateUrl: "partials/about",
+        controller: 'HomeController'
       })
       .when('/resume', {
         templateUrl: "partials/resume",
         controller: 'HomeController'
       })      
-      .when('/about', {
-        templateUrl: "partials/about",
-        controller: 'HomeController'
+      .when('/projects', {
+        templateUrl: "partials/projects",
+        controller: 'ProjectsController'
       })
       .when('/projects/:name', {
         templateUrl: 'partials/project',
@@ -103,17 +102,6 @@ function ProjController($scope, $routeParams, $http) {
     "name":  project["file_name"],
     "intro": project["intro"],
     "link": project["link"]
-  }
-}
-
-function scrollOnClick() {
-  return {
-    restrict: 'A',
-    link: function(scope, $el) {
-      $el.on('click', function() {
-        $("body").animate({scrollTop: 380}, "slow", "easeOutQuad");
-      });
-    }
   }
 }
 

@@ -38,17 +38,17 @@ div(ng-controller="ProjController as projCtrl")
               |.
         br
       .pic-wrapper
+        .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/vimeo.png')")
         .pic-title
           .banner-text.caption An example of an "unfolded" story. 
-        .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/vimeo.png')")
       .pic-wrapper
+        .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/search.png')")
         .pic-title
           .banner-text.caption Authors can search for and embed multimedia content into their stories using FOLD's authoring platform.
-        .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/search.png')")
       .pic-wrapper
+        .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/fold_home.png')")
         .pic-title
           .banner-text.caption The front page of FOLD, where you'll find an eclectic sampling of stories.
-        .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/fold/fold_home.png')")
 
     div(ng-show="project.name == 'buyforbaby'").proj
       .grid
@@ -87,28 +87,18 @@ div(ng-controller="ProjController as projCtrl")
       .grid
         .column
           .pic-wrapper
-            .pic-title
-              .banner-text.caption Landing page view
             .pic.box.contain(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/proto_first.png')")
         .column  
           .pic-wrapper
-            .pic-title
-              .banner-text.caption Parents' wishlist creation form
             .pic.box.contain(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/proto_second.png')")
       .pic-wrapper
-        .pic-title
-          .banner-text.caption Parents' wishlist curation view
         .pic.box.contain(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/proto_third.png')")
       .grid
         .column
           .pic-wrapper
-            .pic-title
-              .banner-text.caption Detailed state during wishlist curation
             .pic.box.contain(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/proto_fourth.png')")
         .column  
           .pic-wrapper
-            .pic-title
-              .banner-text.caption Parents' final wishlist
             .pic.box.contain(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/proto_fifth.png')")
       .grid
         .column
@@ -117,12 +107,8 @@ div(ng-controller="ProjController as projCtrl")
       .pic-wrapper
         .pic.box.bfb-landing.contain.no-hover(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/bfb-landing.png')")
       .pic-wrapper
-        .pic-title
-          .banner-text.caption Parents' wishlist curation view
         .pic.box.contain(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/bfb_giftee_small.png')")
       .pic-wrapper
-        .pic-title
-          .banner-text.caption Parents' final wishlist
         .pic.box.contain(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/buyforbaby/bfb_gifter_small.png')")
 
     div(ng-show="project.name == 'metalwork'").proj
@@ -178,9 +164,9 @@ div(ng-controller="ProjController as projCtrl")
               a(href="//nomadhub.herokuapp.com").cool-pop nomadhub.herokuapp.com 
               | or watch the following webcast to get an idea of the site’s functionality.
       .pic-wrapper
+        .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/nomad/nomad_boston.png')")  
         .pic-title
           .banner-text.caption Users can curate travel profiles of their own and find other nomads in their area.
-        .pic.box(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/nomad/nomad_boston.png')")  
       .vid-wrapper
         iframe(width="100%" height="auto" src="https://www.youtube.com/embed/jF-Od0DgOw0?rel=0&amp;controls=0" frameborder="0" allowfullscreen)
     div(ng-show="project.name == 'hkn'").proj
@@ -212,4 +198,4 @@ div(ng-controller="ProjController as projCtrl")
         .pic.box.no-hover(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/anisotropic/port3_small.jpg')")
       .pic-wrapper
         .pic.box.no-hover(style="background-image: url('http://assets.nathaliehuynh.com/project-assets/anisotropic/port1_small.jpg')")
-    a(scroll-on-click href="/").action-link <br>Back to projects
+    a(href="/").action-link <br>Back to projects

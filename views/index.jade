@@ -5,23 +5,15 @@ block content
       div(ng-controller="HomeController as homeCtrl")
         div.nav-bar.desktop
           div.nav
-            a(scroll-on-click href="/about" class="cool-pop" ng-class="{'action-link': isNotActive('/about')}").nav-link about me
-            | <span> | </span>
-            a(scroll-on-click href="/" class="cool-pop" ng-class="{'action-link': isNotActive('/')}").nav-link projects
+            a(href="/" class="cool-pop" ng-class="{'action-link': isNotActive('/')}").nav-link About me
+            |<span> </span>
+            a(href="/projects" class="cool-pop" ng-class="{'action-link': isNotActive('/projects')}").nav-link projects
           div.contact <span><a class="action-link" href="mailto:nhuynh3@mit.edu">email</a></span> | <span><a class="action-link" href="https://github.com/nhuynh3" target="_blank">github</a></span> | <span><a class="action-link" href="https:www.linkedin.com/pub/nathalie-huynh/63/1/1aa" target="_blank">linkedin</a></span> | <span><a class="action-link" href="resume">resume</a></span> 
+
         div.nav-bar.mobile 
           div.nav.mobile
             div(open-menu).action-link &#x2630;
         div.nav-bar.exit
           div(close-menu).action-link &#x2715;
         div.content
-          div.banner
-            div.banner-image
-            div.banner-title
-              a(scroll-on-click href='/')
-                div.banner-text.name NATHALIE <span> </span>HUYNH 
-                div.banner-text.blurb WEB DEV + DESIGN 
           div(ng-view)
-    footer
-      div.horizontal-line
-      

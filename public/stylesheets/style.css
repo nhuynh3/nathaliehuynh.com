@@ -123,7 +123,10 @@ body, html {
 /*************/
 
 .resume > .blurb {
-  max-width: 25em;
+  max-width: 22em;
+  /*margin: auto;*/
+  text-align: justify;
+  padding: 10px;
 }
 
 /*************/
@@ -177,8 +180,7 @@ body, html {
 .pic-wrapper:hover > .pic-title {
   opacity: 1;
 }
-.box-wrapper:hover > a > .project,
-.pic-wrapper:hover > .pic:not(.no-hover) {
+.box-wrapper:hover > a > .project {
   opacity: 0.6;
 }
 
@@ -253,9 +255,6 @@ ol {
 /*************/
 /* about     */
 /*************/
-.about.grid-wrapper {
-  padding-bottom: 50px;
-}
 .grid-wrapper > .horizontal-line {
   float: left;
   width: 100%;
@@ -268,6 +267,7 @@ ol {
 .about-blurb {
   max-width: 26em;
   text-align: justify;
+  line-height: 1.3em;
 }
 
 .about-blurb.box, .courses.box {
@@ -307,9 +307,8 @@ ul {
   line-height: 3em;
 }
 li.course {
-  padding-left: 50px;
+  list-style: none;
   line-height: 2.2em;
-  text-indent: -18px;
   max-width: 22em;
 }
 li.hidden {
@@ -360,14 +359,13 @@ li.hidden {
 }
 .banner-text.caption {
   font-size: 16px;
-  margin: 64px 0 0 32px;
-  max-width: 18em;
 }
 /*************/
 /* nav     */
 /*************/
 div.nav-bar {
   position: fixed;
+  top: 0;
   width: 100%;
   background-color: white;
   z-index: 2;
@@ -398,7 +396,7 @@ div.nav.mobile {
 
 div.content {
   position: relative;
-  top: 70px;
+  top: 85px;
 }
 
 .nav-link {
@@ -420,13 +418,13 @@ div.content {
 /*************/
 .container {
   min-height: 100%;
-  margin: 0 auto -145px;
+  margin: -25px auto -145px;
 }
 .container:after {
   content:"";
   display: block;
 }
-.contact, .container:after, footer {
+.contact, .container:after{
   max-width: 900px;
   color: #c9c6c2;
   padding: 2px 20px 0;
@@ -436,9 +434,7 @@ div.content {
   line-height: 1.6em;
   font-size: 10pt;
 }
-footer {
-  margin: 200px auto 30px;
-}
+
 .horizontal-line {
   border: none;
   background-color: #c9c6c2;
