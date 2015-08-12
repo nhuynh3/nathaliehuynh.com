@@ -453,7 +453,8 @@ div.content {
     width: 100%;
   }
   .courses.box {
-    margin: 0;
+    margin: auto;
+    max-width: 19em;
   }
   .project-title.buyforbaby{
     width: 200px;
