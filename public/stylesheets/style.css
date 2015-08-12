@@ -381,7 +381,7 @@ div.nav-bar {
 .nav.exit {
   width: 20px;
   position: fixed;
-  right: 25px;
+  right: 3%;
 }
 
 .exit-glyph {
