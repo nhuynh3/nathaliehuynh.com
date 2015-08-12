@@ -126,6 +126,11 @@ body, html {
   margin: auto;
 }
 
+.resume > iframe {
+  height: 1050px;
+  width: 880px;
+}
+
 /*************/
 /* PROJECTS  */
 /*************/
@@ -460,6 +465,11 @@ div.content {
   .banner-text.name {
     margin: 248px 0 0 32px;
   }
+
+  .resume > iframe {
+    height: 835px;
+    width: 100%;
+  }
 }
 @media (max-width: 600px) {
   .nav.desktop {
@@ -555,9 +565,13 @@ div.content {
   opacity: 0;
 }
 
-  footer {
-    text-align: center;
-  }
+.resume > iframe {
+  height: 692px;
+}
+
+footer {
+  text-align: center;
+}
 }
 @media (max-width: 460px) {
   .banner-image {
@@ -586,6 +600,9 @@ div.content {
   }
   .courses.column {
     padding: 5px;
+  }
+  .resume > iframe {
+    height: 525px;
   }
 }
 
