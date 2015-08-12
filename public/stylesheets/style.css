@@ -467,7 +467,7 @@ div.content {
   }
 
   .resume > iframe {
-    height: 835px;
+    height: 120vw;
     width: 100%;
   }
 }
@@ -565,10 +565,6 @@ div.content {
   opacity: 0;
 }
 
-.resume > iframe {
-  height: 692px;
-}
-
 footer {
   text-align: center;
 }
@@ -600,9 +596,6 @@ footer {
   }
   .courses.column {
     padding: 5px;
-  }
-  .resume > iframe {
-    height: 525px;
   }
 }
 
