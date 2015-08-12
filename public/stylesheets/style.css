@@ -370,17 +370,23 @@ div.nav-bar {
   background-color: white;
   z-index: 2;
   padding: 20px 0 0;
+  height: 90px;
 }
 
-.nav-bar.mobile, .nav-bar.exit {
-  display: none;
-  transition: display ;
+.nav.mobile, .nav.exit {
+  opacity: 0;
+  z-index: -1;
 }
 
-.nav-bar.exit {
+.nav.exit {
   width: 20px;
   position: fixed;
   right: 3%;
+}
+
+.exit-glyph {
+  position: relative;
+  bottom: 170px;
 }
 
 div.nav {
@@ -463,25 +469,28 @@ div.content {
   }
 }
 @media (max-width: 600px) {
-  .nav-bar.desktop {
-    display: none;
+  .nav.desktop {
+    z-index: 0;
+    opacity: 0;
   }
-  .nav-bar.mobile {
-    display: block;
-    padding: 10px;
+  .nav.mobile {
+    z-index: 1;
+    opacity: 1;
+    padding: 33px;
+    position: relative;
+    bottom: 90px;
   }
 
-  .nav-bar.desktop.open, .nav-bar.exit.open {
-    display: block;
+  .nav.desktop.open, .nav.exit.open {
+    z-index: 1;
+    opacity: 1;
   }
-  .nav-bar.mobile.open {
-    display: none;
+  .nav.mobile.open {
+    z-index: 0;
+    opacity: 0;
   }
 
   div.content {
-    top: 40px;
-  }
-  div.content.menu-open {
     top: 90px;
   }
   .column {
@@ -584,10 +593,6 @@ div.content {
   }
   .courses.column {
     padding: 5px;
-  }
-
-  li.course {
-    padding-left: 20px;
   }
 }
 

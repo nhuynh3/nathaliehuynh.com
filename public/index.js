@@ -109,9 +109,8 @@ function openMenu() {
   return {
     restrict: 'A',
     link: function(scope, $el) {
-      $(".nav-bar.mobile").on('click', function() {
-        $(".nav-bar").addClass("open");
-        $(".content").addClass("menu-open");
+      $(".nav.mobile").on('click', function() {
+        $(".nav").addClass("open");
       });
     }
   }
@@ -121,9 +120,8 @@ function closeMenu() {
   return {
     restrict: 'A',
     link: function(scope, $el) {
-      $(".nav-bar.exit").on('click', function() {
-        $(".nav-bar").removeClass("open");
-        $(".content").removeClass("menu-open");
+      $(".nav.exit").on('click', function() {
+        $(".nav").removeClass("open");
       });
     }
   }
