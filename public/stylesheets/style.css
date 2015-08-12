@@ -470,7 +470,7 @@ div.content {
 }
 @media (max-width: 600px) {
   .nav.desktop {
-    z-index: 0;
+    z-index: -1;
     opacity: 0;
   }
   .nav.mobile {
@@ -486,7 +486,7 @@ div.content {
     opacity: 1;
   }
   .nav.mobile.open {
-    z-index: 0;
+    z-index: -1;
     opacity: 0;
   }
 
