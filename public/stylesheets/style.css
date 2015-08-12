@@ -122,11 +122,8 @@ body, html {
 /* RESUME    */
 /*************/
 
-.resume > .blurb {
-  max-width: 22em;
-  /*margin: auto;*/
-  text-align: justify;
-  padding: 10px;
+.resume {
+  margin: auto;
 }
 
 /*************/
