@@ -10,11 +10,6 @@ var db = monk('localhost:27017/nodetest1');
 
 var app = express();
 
-var http = require("http");
-setInterval(function() {
-    http.get("http://whispering-temple-1386.herokuapp.com");
-}, 300000); // ping site every 5 minutes (300000)
-
 var port = Number(process.env.PORT || 5000);
 app.listen(port, function() {
   console.log("Listening on " + port);
