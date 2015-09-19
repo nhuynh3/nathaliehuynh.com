@@ -267,9 +267,8 @@ ol {
 }
 
 .about-blurb {
-  max-width: 26em;
-  text-align: justify;
-  line-height: 1.3em;
+  max-width: 21em;
+  line-height: 1.4em;
 }
 
 .about-blurb.box, .courses.box {
