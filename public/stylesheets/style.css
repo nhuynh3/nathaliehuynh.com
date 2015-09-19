@@ -195,7 +195,7 @@ body, html {
   left: 50px;
   width: 50px;
   height: 300px;
-  background: url("http://assets.nathaliehuynh.com/profile-assets/back.svg") no-repeat;
+  background: url("http://d9s4mnar66fdl.cloudfront.net/profile-assets/back.svg") no-repeat;
 }
 .proj-title{
   position: relative;
@@ -331,7 +331,7 @@ li.hidden {
 .banner-image {
   height: 100%;
   background-size: cover;
-  background-image: url("http://assets.nathaliehuynh.com/profile-assets/prof_charles.jpg");
+  background-image: url("http://d9s4mnar66fdl.cloudfront.net/profile-assets/prof_charles.jpg");
   background-repeat: no-repeat;
   opacity: 0.9;
 }
